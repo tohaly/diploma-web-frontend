@@ -1,0 +1,10 @@
+@import url('./__field/search-form__field.css');
+@import url('./__button/search-form__button.css');
+
+.search-form {
+  max-width: 608px;
+  width: 100%;
+  display: flex;
+  align-self: center;
+  margin-bottom: 80px;
+}

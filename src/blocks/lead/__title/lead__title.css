@@ -1,0 +1,10 @@
+.lead__title {
+  color: #fff;
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3.8rem;
+  line-height: 1.1;
+  text-align: center;
+  margin: 0 0 32px;
+}

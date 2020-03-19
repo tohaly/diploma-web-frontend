@@ -1,0 +1,23 @@
+@media screen and (max-width: 900px) {
+  .header {
+    padding-left: 5.2%;
+    padding-right: 5.2%;
+    margin-bottom: 38px;
+  }
+
+  .header__text-logo {
+    margin-top: 22px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header__text-logo {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 1rem;
+  }
+
+  .header__hamburger {
+    display: block;
+  }
+}

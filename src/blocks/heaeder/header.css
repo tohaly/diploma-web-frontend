@@ -1,0 +1,14 @@
+@import url('./__text-logo/header__text-logo.css');
+@import url('./__hamburger/header__hamburger.css');
+@import url('./__hamburger/_close/header__hamburger_close.css');
+@import url('./__hamburger/_open/header__hamburger_open.css');
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background: rgba(196, 196, 196, 0.01);
+  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+  padding: 0 7.2%;
+  margin-bottom: 80px;
+}

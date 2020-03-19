@@ -1,0 +1,30 @@
+@media screen and (max-width: 900px) {
+  .search-form {
+    max-width: 448px;
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .search-form {
+    padding-left: 5.2%;
+    padding-right: 5.2%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .search-form {
+    flex-direction: column;
+    padding-left: 5.2%;
+    padding-right: 5.2%;
+  }
+
+  .search-form__field {
+    margin-bottom: 16px;
+  }
+
+  .search-form__button {
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+}
