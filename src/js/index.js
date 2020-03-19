@@ -1,2 +1,2 @@
 // styles
-import '../styles/style.css';
+import '../pages/index.css';
