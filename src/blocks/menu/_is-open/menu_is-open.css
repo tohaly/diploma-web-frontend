@@ -1,3 +1,5 @@
 .menu_is-open {
   display: block;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }

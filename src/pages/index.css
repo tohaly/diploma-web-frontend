@@ -18,3 +18,7 @@
 .page {
   font-family: 'Roboto';
 }
+
+.page__overflow {
+  overflow: hidden;
+}

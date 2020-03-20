@@ -1,7 +1,7 @@
 @media screen and (max-width: 900px) {
   .menu__link {
     font-size: 1rem;
-    margin-right: 18px;
+    margin-right: 16px;
     margin-top: 22px;
   }
 
@@ -50,7 +50,4 @@
   .menu__link_active::before {
     display: none;
   }
-}
-
-@media screen and (max-width: 660px) {
 }
