@@ -142,6 +142,26 @@
         <button class="button cards__get-more-cards">Показать еще</button>
       </div>
     </section>
+    <section class="about">
+      <div class="about__container">
+        <img
+          class="about__img"
+          src="<%=require('./images/about-example.png')%>"
+          alt="Автор проекта"
+        />
+        <div class="about__content">
+          <h2 class="about__title">Об атворе</h2>
+          <p class="about__text">
+            Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы
+            занимаетесь, какими технологиями разработки владеете.
+          </p>
+          <p class="about__text">
+            Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем
+            можете помочь потенциальным заказчикам.
+          </p>
+        </div>
+      </div>
+    </section>
     <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
   </body>
 </html>

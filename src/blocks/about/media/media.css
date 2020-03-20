@@ -1,0 +1,36 @@
+@media screen and (max-width: 900px) {
+  .about {
+    padding: 40px 40px 60px;
+  }
+
+  .about__content {
+    padding: 0 0 0 56px;
+  }
+
+  .about__title {
+    font-size: 1.9rem;
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .about {
+    padding: 32px 16px 80px;
+  }
+
+  .about__container {
+    flex-direction: column;
+  }
+
+  .about__img {
+    padding: 0 8px;
+    margin-bottom: 24px;
+  }
+
+  .about__content {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+}
