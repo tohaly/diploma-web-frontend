@@ -1,0 +1,12 @@
+.card__mark {
+  width: 40px;
+  height: 40px;
+  background-image: url('../../../../images/card-control/mark-normal.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.card__mark:hover {
+  background-image: url('../../../../images/card-control/mark-hover.svg');
+}

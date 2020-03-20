@@ -12,7 +12,7 @@
       <div class="lead__container">
         <header class="header">
           <p class="header__text-logo">NewsExplorer</p>
-          <div class="menu">
+          <nav class="menu">
             <div class="menu__container">
               <a href="" class="menu__link menu__link_active">Главная</a>
               <a href="" class="menu__link">Сохранённые статьи</a>
@@ -32,7 +32,7 @@
                 ></span>
               </button>
             </div>
-          </div>
+          </nav>
           <button class="button header__hamburger header__hamburger_close"></button>
         </header>
         <h1 class="lead__title">
@@ -48,7 +48,98 @@
         </form>
       </div>
     </section>
+    <section class="search-result">
+      <div class="search-result__container">
+        <h2 class="search-result__title">Результаты поиска</h2>
+        <div class="cards">
+          <article class="card">
+            <a href="#" class="card__link">
+              <img
+                class="card__img"
+                src="<%=require('./images/cards-example/image-1.jpg')%>"
+                alt="Национальное достояние- парки"
+              />
+              <div class="card__content">
+                <time class="card__pub-time" datetime="2019-08-02">2 августа, 2019</time>
+                <h3 class="card__title">Национальное достояние – парки</h3>
+                <p class="card__text">
+                  В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+                  складываться система национальных парков – охраняемых территорий, где и сегодня
+                  каждый может приобщиться к природе.
+                </p>
+                <p class="card__resource">
+                  Лента.ру
+                </p>
+              </div>
+            </a>
+            <div class="card__control">
+              <p class="card__need-signin">
+                Войдите, чтобы сохранять статьи
+              </p>
+              <div class="card__mark card__mark_is-active"></div>
+            </div>
+          </article>
 
+          <article class="card">
+            <a href="#" class="card__link">
+              <img
+                class="card__img"
+                src="<%=require('./images/cards-example/image-2.jpg')%>"
+                alt="Национальное достояние- парки"
+              />
+              <div class="card__content">
+                <time class="card__pub-time" datetime="2019-08-02">2 августа, 2019</time>
+                <h3 class="card__title">Лесные огоньки: история одной фотографии</h3>
+                <p class="card__text">
+                  Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы
+                  запечатлеть ускользающую красоту одного из местных чудес природы.
+                </p>
+                <p class="card__resource">
+                  Медуза
+                </p>
+              </div>
+            </a>
+            <div class="card__control">
+              <p class="card__need-signin">
+                Войдите, чтобы сохранять статьи
+              </p>
+              <div class="card__mark"></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <a href="#" class="card__link">
+              <img
+                class="card__img"
+                src="<%=require('./images/cards-example/image-3.jpg')%>"
+                alt="Национальное достояние- парки"
+              />
+              <div class="card__content">
+                <time class="card__pub-time" datetime="2019-08-02">2 августа, 2019</time>
+                <h3 class="card__title">
+                  «Первозданная тайга»: новый фотопроект Игоря Шпиленка
+                </h3>
+                <p class="card__text">
+                  Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о
+                  необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу,
+                  где...
+                </p>
+                <p class="card__resource">
+                  Медиазона
+                </p>
+              </div>
+            </a>
+            <div class="card__control">
+              <p class="card__need-signin card__need-signin_is-active">
+                Войдите, чтобы сохранять статьи
+              </p>
+              <div class="card__mark"></div>
+            </div>
+          </article>
+        </div>
+        <button class="button cards__get-more-cards">Показать еще</button>
+      </div>
+    </section>
     <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
   </body>
 </html>

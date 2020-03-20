@@ -1,0 +1,7 @@
+@import url('./__title/search-result__title.css');
+@import url('./__container/search-result__container.css');
+
+.search-result {
+  background-color: #f5f6f7;
+  padding: 80px 7.2% 100px;
+}
