@@ -1,0 +1,14 @@
+.header__hamburger_open_saved_news {
+  background-image: url('../../../../../images/back-saved-news.svg');
+  width: 20px;
+  height: 20px;
+  background-position: center;
+}
+
+.header__hamburger_open_saved_news::before {
+  height: 0;
+}
+
+.header__hamburger_open_saved_news::after {
+  height: 0;
+}

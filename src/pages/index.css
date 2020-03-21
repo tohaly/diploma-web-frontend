@@ -11,6 +11,8 @@
 
 @import url('../media/media.css');
 
+@import url('./saved-news.css');
+
 @import url('../blocks/menu/_is-open/menu_is-open.css'); /* ???? */
 
 * {
