@@ -44,6 +44,19 @@
         ></button>
       </div>
     </header>
+    <section class="news-info">
+      <div class="news-info__container">
+        <h2 class="news-info__title">Сохранённые статьи</h2>
+        <p class="news-info__subtitle">
+          <span class="news-info__user-name">Грета</span>, у вас
+          <span class="news-info__numb-of-news">5 сохранённых статей</span>
+        </p>
+        <p class="news-info__keywords">
+          По ключевым словам: <span class="news-info__keywords_tag">Природа</span>,
+          <span class="news-info__keywords_tag"">Тайга</span> и <span class="news-info__keywords_tag"">2 другим</span>
+        </p>
+      </div>
+    </section>
     <%=require('html-loader!./templates/footer.html')%>
     <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
   </body>

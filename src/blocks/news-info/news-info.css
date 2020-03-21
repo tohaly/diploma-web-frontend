@@ -1,0 +1,12 @@
+@import url('./__container/news-info__container.css');
+@import url('./__keywords/news-info__keywords.css');
+@import url('./__numb-of-news/news-info__numb-of-news.css');
+@import url('./__subtitle/news-info__subtitle.css');
+@import url('./__keywords/_tag/news-info__keywords_tag.css');
+@import url('./__title/news-info__title.css');
+@import url('./__user-name/news-info__user-name.css');
+
+.news-info {
+  max-width: 1440px;
+  margin: 0 auto;
+}
