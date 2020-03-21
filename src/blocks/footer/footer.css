@@ -1,0 +1,14 @@
+@import url('./__channels-img/footer__channels-img.css');
+@import url('./__channels-img/_facebook/footer__channels-img_facebook.css');
+@import url('./__channels-img/_github/footer__channels-img_github.css');
+@import url('./__channels-link/footer__channels-link.css');
+@import url('./__channels/footer__channels.css');
+@import url('./__container/footer__container.css');
+@import url('./__copyright/footer__copyright.css');
+@import url('./__useful-links-item/footer__useful-links-item.css');
+@import url('./__useful-links/footer__useful-links.css');
+
+.footer {
+  max-width: 1440px;
+  padding: 0 104px;
+}

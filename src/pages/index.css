@@ -7,6 +7,7 @@
 @import url('../blocks/search-result/search-result.css');
 @import url('../blocks/cards/cards.css');
 @import url('../blocks/about/about.css');
+@import url('../blocks/footer/footer.css');
 
 @import url('../media/media.css');
 
@@ -18,6 +19,7 @@
 
 .page {
   font-family: 'Roboto';
+  color: #1a1b22;
 }
 
 .page__overflow {
