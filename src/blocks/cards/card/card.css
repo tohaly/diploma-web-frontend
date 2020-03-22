@@ -2,14 +2,17 @@
 @import url('./__pub-time/card__pub-time.css');
 @import url('./__text/card__text.css');
 @import url('./__title/card__title.css');
-@import url('./__mark/card__mark.css');
-@import url('./__need-signin/card__need-signin.css');
+@import url('./__button/card__button.css');
+@import url('./__button/_mark/card__button_mark.css');
+@import url('./__button/_delete/card__button_delete.css');
+@import url('./__button/_mark/_is-active/card__button_mark_is-active.css');
+@import url('./__confirm/card__confirm.css');
+@import url('./__confirm/_is-active/card__confirm_is-active.css');
 @import url('./__resource/card__resource.css');
 @import url('./__control/card__control.css');
 @import url('./__content/card__content.css');
-@import url('./__mark/_is-active/card__mark_is-active.css');
 @import url('./__link/card__link.css');
-@import url('./__need-signin/_is-active/card__need-signin_is-active.css');
+@import url('./__tag-name/card__tag-name.css');
 
 .card {
   display: flex;

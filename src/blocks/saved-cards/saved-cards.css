@@ -1,0 +1,6 @@
+@import url('./__container/saved-cards__container.css');
+
+.saved-cards {
+  background-color: #f5f6f7;
+  padding: 80px 104px 40px;
+}

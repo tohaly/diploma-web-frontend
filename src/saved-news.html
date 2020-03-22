@@ -15,11 +15,11 @@
           <div class="menu__container  menu__container_saved-news">
             <a
               href="./index.html"
-              class="menu__link menu__link_saved-news menu__link_active menu__link_active_saved-news"
+              class="menu__link menu__link_saved-news"
             >
               Главная
             </a>
-            <a href="" class="menu__link menu__link_saved-news">Сохранённые статьи</a>
+            <a href="" class="menu__link menu__link_saved-news menu__link_active menu__link_active_saved-news">Сохранённые статьи</a>
             <button class="button menu__button menu__button_saved-news menu__button_authorization">
               Авторизоваться
             </button>
@@ -57,6 +57,163 @@
         </p>
       </div>
     </section>
+    <section class="saved-cards">
+      <div class="saved-cards__container">
+        <div class="cards">
+          <article class="card">
+            <a href="#" class="card__link">
+              <img
+                class="card__img"
+                src="<%=require('./images/cards-example/image-1.jpg')%>"
+                alt="Национальное достояние- парки"
+              />
+              <div class="card__content">
+                <time class="card__pub-time" datetime="2019-08-02">2 августа, 2019</time>
+                <h3 class="card__title">Национальное достояние – парки</h3>
+                <p class="card__text">
+                  В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+                  складываться система национальных парков – охраняемых территорий, где и сегодня
+                  каждый может приобщиться к природе.
+                </p>
+                <p class="card__resource">
+                  Лента.ру
+                </p>
+              </div>
+            </a>
+            <div class="card__control">              
+              <div class="card__button card__button_delete"></div>
+              <p class="card__confirm card__confirm_delete">
+                Убрать из сохранённых
+              </p>
+            </div>
+            <p class="card__tag-name">
+              Природа
+            </p>
+          </article>
+          <article class="card">
+            <a href="#" class="card__link">
+              <img
+                class="card__img"
+                src="<%=require('./images/cards-example/image-2.jpg')%>"
+                alt="Национальное достояние- парки"
+              />
+              <div class="card__content">
+                <time class="card__pub-time" datetime="2019-08-02">2 августа, 2019</time>
+                <h3 class="card__title">Лесные огоньки: история одной фотографии</h3>
+                <p class="card__text">
+                  Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы
+                  запечатлеть ускользающую красоту одного из местных чудес природы.
+                </p>
+                <p class="card__resource">
+                  Медуза
+                </p>
+              </div>
+            </a>
+            <div class="card__control">              
+              <div class="card__button card__button_delete"></div>
+              <p class="card__confirm card__confirm_delete">
+                Убрать из сохранённых
+              </p>
+            </div>
+            <p class="card__tag-name">
+              Природа
+            </p>
+          </article>
+          <article class="card">
+            <a href="#" class="card__link">
+              <img
+                class="card__img"
+                src="<%=require('./images/cards-example/image-3.jpg')%>"
+                alt="Национальное достояние- парки"
+              />
+              <div class="card__content">
+                <time class="card__pub-time" datetime="2019-08-02">2 августа, 2019</time>
+                <h3 class="card__title">
+                  «Первозданная тайга»: новый фотопроект Игоря Шпиленка
+                </h3>
+                <p class="card__text">
+                  Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о
+                  необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу,
+                  где...
+                </p>
+                <p class="card__resource">
+                  Медиазона
+                </p>
+              </div>
+            </a>
+            <div class="card__control">
+              <div class="card__button card__button_delete"></div>
+              <p class="card__confirm card__confirm_delete">
+                Убрать из сохранённых
+              </p>
+            </div>
+            <p class="card__tag-name">
+              Природа
+            </p>
+          </article>
+          <article class="card">
+            <a href="#" class="card__link">
+              <img
+                class="card__img"
+                src="<%=require('./images/cards-example/image-4.jpg')%>"
+                alt="Национальное достояние- парки"
+              />
+              <div class="card__content">
+                <time class="card__pub-time" datetime="2019-08-02">2 августа, 2019</time>
+                <h3 class="card__title">
+                  Национальное достояние – парки
+                </h3>
+                <p class="card__text">
+                  В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
+                </p>
+                <p class="card__resource">
+                  Дзен
+                </p>
+              </div>
+            </a>
+            <div class="card__control">
+              <div class="card__button card__button_delete"></div>
+              <p class="card__confirm card__confirm_delete">
+                Убрать из сохранённых
+              </p>
+            </div>
+            <p class="card__tag-name">
+              Природа
+            </p>
+          </article>
+          <article class="card">
+            <a href="#" class="card__link">
+              <img
+                class="card__img"
+                src="<%=require('./images/cards-example/image-5.jpg')%>"
+                alt="Национальное достояние- парки"
+              />
+              <div class="card__content">
+                <time class="card__pub-time" datetime="2019-08-02">2 августа, 2019</time>
+                <h3 class="card__title">
+                  Лесные огоньки: история одной фотографии
+                </h3>
+                <p class="card__text">
+                  Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.
+                </p>
+                <p class="card__resource">
+                  Афиша
+                </p>
+              </div>
+            </a>
+            <div class="card__control">
+              <div class="card__button card__button_delete"></div>
+              <p class="card__confirm card__confirm_delete">
+                Убрать из сохранённых
+              </p>
+            </div>
+            <p class="card__tag-name">
+              Природа
+            </p>
+          </article>
+        </div>
+      </div>      
+    </section>    
     <%=require('html-loader!./templates/footer.html')%>
     <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
   </body>

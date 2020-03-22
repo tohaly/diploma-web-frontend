@@ -1,0 +1,17 @@
+.card__tag-name {
+  display: flex;
+  flex-direction: row-reverse;
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  z-index: 4;
+  margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1.3;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 11px 14px;
+  cursor: pointer;
+}

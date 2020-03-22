@@ -17,11 +17,16 @@
   .card__control {
     right: 8px;
     top: 8px;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: flex-end;
   }
 
-  .card__need-signin {
+  .card__tag-name {
+    left: 8px;
+    top: 8px;
+  }
+
+  .card__confirm {
     margin: 8px 0;
   }
 
@@ -44,12 +49,6 @@
   .card__control {
     right: 16px;
     top: 16px;
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
-  .card__need-signin {
-    margin: 0 16px 0 0;
   }
 
   .card__pub-time {
