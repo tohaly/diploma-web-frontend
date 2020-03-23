@@ -1,7 +1,11 @@
-@import url('./__title/search-result__title.css');
 @import url('./__container/search-result__container.css');
+@import url('./__nothing-img/search-result__nothing-img.css');
+@import url('./__nothing-subtitle/search-result__nothing-subtitle.css');
+@import url('./__nothing-title/search-result__nothing-title.css');
+@import url('./__nothing/search-result__nothing.css');
+@import url('./__nothing/_is-active/search-result__nothing_is-active.css');
 
 .search-result {
   background-color: #f5f6f7;
-  padding: 80px 104px 40px;
+  padding: 80px 104px;
 }

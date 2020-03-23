@@ -1,0 +1,8 @@
+@import url('./__item/loader__item.css');
+@import url('./__text/loader__text.css');
+
+.loader {
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}

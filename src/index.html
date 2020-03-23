@@ -12,10 +12,10 @@
       <div class="lead__container">
         <header class="header">
           <div class="header__container">
-            <p class="header__text-logo">NewsExplorer</p>
+            <a href="./index.html" class="header__text-logo">NewsExplorer</a>
             <nav class="menu">
               <div class="menu__container">
-                <a href="" class="menu__link menu__link_active">Главная</a>
+                <a href="#" class="menu__link menu__link_active">Главная</a>
                 <a href="./saved-news.html" class="menu__link">Сохранённые статьи</a>
                 <button class="button menu__button menu__button_authorization">
                   Авторизоваться
@@ -52,94 +52,106 @@
     </section>
     <section class="search-result">
       <div class="search-result__container">
-        <h2 class="search-result__title">Результаты поиска</h2>
-        <div class="cards">
-          <article class="card">
-            <a href="#" class="card__link">
-              <img
-                class="card__img"
-                src="<%=require('./images/cards-example/image-1.jpg')%>"
-                alt="Национальное достояние- парки"
-              />
-              <div class="card__content">
-                <time class="card__pub-time" datetime="2019-08-02">2 августа, 2019</time>
-                <h3 class="card__title">Национальное достояние – парки</h3>
-                <p class="card__text">
-                  В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-                  складываться система национальных парков – охраняемых территорий, где и сегодня
-                  каждый может приобщиться к природе.
-                </p>
-                <p class="card__resource">
-                  Лента.ру
+        <div class="cards cards_is-active">
+          <h2 class="cards__title">Результаты поиска</h2>
+          <div class="cards__items">
+            <article class="card">
+              <a href="#" class="card__link">
+                <img
+                  class="card__img"
+                  src="<%=require('./images/cards-example/image-1.jpg')%>"
+                  alt="Национальное достояние- парки"
+                />
+                <div class="card__content">
+                  <time class="card__pub-time" datetime="2019-08-02">2 августа, 2019</time>
+                  <h3 class="card__title">Национальное достояние – парки</h3>
+                  <p class="card__text">
+                    В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+                    складываться система национальных парков – охраняемых территорий, где и сегодня
+                    каждый может приобщиться к природе.
+                  </p>
+                  <p class="card__resource">
+                    Лента.ру
+                  </p>
+                </div>
+              </a>
+              <div class="card__control">
+                <div class="card__button card__button_mark card__button_mark_is-active"></div>
+                <p class="card__confirm card__confirm_signin">
+                  Войдите, чтобы сохранять статьи
                 </p>
               </div>
-            </a>
-            <div class="card__control">
-              <div class="card__button card__button_mark card__button_mark_is-active"></div>
-              <p class="card__confirm">
-                Войдите, чтобы сохранять статьи
-              </p>
-            </div>
-          </article>
+            </article>
+            <article class="card">
+              <a href="#" class="card__link">
+                <img
+                  class="card__img"
+                  src="<%=require('./images/cards-example/image-2.jpg')%>"
+                  alt="Национальное достояние- парки"
+                />
+                <div class="card__content">
+                  <time class="card__pub-time" datetime="2019-08-02">2 августа, 2019</time>
+                  <h3 class="card__title">Лесные огоньки: история одной фотографии</h3>
+                  <p class="card__text">
+                    Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы
+                    запечатлеть ускользающую красоту одного из местных чудес природы.
+                  </p>
+                  <p class="card__resource">
+                    Медуза
+                  </p>
+                </div>
+              </a>
+              <div class="card__control">
+                <div class="card__button card__button_mark"></div>
+                <p class="card__confirm card__confirm_signin">
+                  Войдите, чтобы сохранять статьи
+                </p>
+              </div>
+            </article>
+            <article class="card">
+              <a href="#" class="card__link">
+                <img
+                  class="card__img"
+                  src="<%=require('./images/cards-example/image-3.jpg')%>"
+                  alt="Национальное достояние- парки"
+                />
+                <div class="card__content">
+                  <time class="card__pub-time" datetime="2019-08-02">2 августа, 2019</time>
+                  <h3 class="card__title">
+                    «Первозданная тайга»: новый фотопроект Игоря Шпиленка
+                  </h3>
+                  <p class="card__text">
+                    Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о
+                    необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу,
+                    где...
+                  </p>
+                  <p class="card__resource">
+                    Медиазона
+                  </p>
+                </div>
+              </a>
+              <div class="card__control">
+                <div class="card__button card__button_mark"></div>
+                <p class="card__confirm card__confirm_signin">
+                  Войдите, чтобы сохранять статьи
+                </p>
+              </div>
+            </article>
+          </div>
 
-          <article class="card">
-            <a href="#" class="card__link">
-              <img
-                class="card__img"
-                src="<%=require('./images/cards-example/image-2.jpg')%>"
-                alt="Национальное достояние- парки"
-              />
-              <div class="card__content">
-                <time class="card__pub-time" datetime="2019-08-02">2 августа, 2019</time>
-                <h3 class="card__title">Лесные огоньки: история одной фотографии</h3>
-                <p class="card__text">
-                  Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы
-                  запечатлеть ускользающую красоту одного из местных чудес природы.
-                </p>
-                <p class="card__resource">
-                  Медуза
-                </p>
-              </div>
-            </a>
-            <div class="card__control">
-              <div class="card__button card__button_mark"></div>
-              <p class="card__confirm">
-                Войдите, чтобы сохранять статьи
-              </p>
-            </div>
-          </article>
-
-          <article class="card">
-            <a href="#" class="card__link">
-              <img
-                class="card__img"
-                src="<%=require('./images/cards-example/image-3.jpg')%>"
-                alt="Национальное достояние- парки"
-              />
-              <div class="card__content">
-                <time class="card__pub-time" datetime="2019-08-02">2 августа, 2019</time>
-                <h3 class="card__title">
-                  «Первозданная тайга»: новый фотопроект Игоря Шпиленка
-                </h3>
-                <p class="card__text">
-                  Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о
-                  необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу,
-                  где...
-                </p>
-                <p class="card__resource">
-                  Медиазона
-                </p>
-              </div>
-            </a>
-            <div class="card__control">
-              <div class="card__button card__button_mark"></div>
-              <p class="card__confirm">
-                Войдите, чтобы сохранять статьи
-              </p>
-            </div>
-          </article>
+          <button class="button cards__get-more-cards">Показать еще</button>
         </div>
-        <button class="button cards__get-more-cards">Показать еще</button>
+        <div class="loader">
+          <div class="loader__item"></div>
+          <p class="loader__text">Идет поиск новостей...</p>
+        </div>
+        <div class="search-result__nothing">
+          <div class="search-result__nothing-img"></div>
+          <h4 class="search-result__nothing-title">Ничего не найдено</h4>
+          <p class="search-result__nothing-subtitle">
+            К сожалению по вашему запросу ничего не найдено.
+          </p>
+        </div>
       </div>
     </section>
     <section class="about">
@@ -163,6 +175,9 @@
       </div>
     </section>
     <%=require('html-loader!./templates/footer.html')%>
+
+    <section class="popup"></section>
+
     <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
   </body>
 </html>

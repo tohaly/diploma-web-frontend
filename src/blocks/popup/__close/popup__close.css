@@ -1,0 +1,11 @@
+.popup__close {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -36px;
+  right: -36px;
+  cursor: pointer;
+  background-image: url('../../../images/popup__close.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}

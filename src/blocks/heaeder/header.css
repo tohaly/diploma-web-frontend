@@ -6,6 +6,7 @@
 @import url('./__text-logo/_saved-news/header__text-logo_saved-news.css');
 @import url('./__hamburger/_close/_saved-news/header__hamburger_close_saved-news.css');
 @import url('./__hamburger/_open/_saved-news/header__hamburger_open_saved_news.css');
+@import url('./__hamburger/_opening-popup/header__hamburger_opening-popup.css');
 
 .header {
   box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);

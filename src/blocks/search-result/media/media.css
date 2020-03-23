@@ -1,9 +1,4 @@
 @media screen and (max-width: 900px) {
-  .search-result__title {
-    font-size: 1.9rem;
-    margin-bottom: 32px;
-  }
-
   .search-result {
     padding: 40px;
   }
