@@ -1,0 +1,13 @@
+@import url('./__text-logo/header__text-logo.css');
+@import url('./__container/header__container.css');
+@import url('./__text-logo/_saved-news/header__text-logo_saved-news.css');
+@import url('./__universal-button/header__universal-button.css');
+@import url('./__universal-button/_saved-news/header__universal-button_saved-news.css');
+@import url('./__universal-button/_close/header__universal-button_close.css');
+@import url('./__universal-button/_close/_saved-news/header__universal-button_close_saved-news.css');
+
+.header {
+  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+  margin-bottom: 80px;
+  padding: 0 104px;
+}

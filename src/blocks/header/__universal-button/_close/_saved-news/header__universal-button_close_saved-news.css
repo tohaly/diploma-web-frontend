@@ -1,0 +1,14 @@
+.header__universal-button_close_saved-news {
+  background-image: url('../../../../../images/back-saved-news.svg');
+  width: 20px;
+  height: 20px;
+  background-position: center;
+}
+
+.header__universal-button_close_saved-news::before {
+  display: none;
+}
+
+.header__universal-button_close_saved-news::after {
+  display: none;
+}

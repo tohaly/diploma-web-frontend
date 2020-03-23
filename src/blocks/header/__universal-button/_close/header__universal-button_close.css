@@ -1,0 +1,14 @@
+.header__universal-button_close {
+  background-image: url('../../../../images/back.svg');
+  width: 20px;
+  height: 20px;
+  background-position: center;
+}
+
+.header__universal-button_close::before {
+  display: none;
+}
+
+.header__universal-button_close::after {
+  display: none;
+}

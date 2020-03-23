@@ -1,4 +1,4 @@
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 510px) {
   .popup {
     top: 56px;
     height: auto;
@@ -9,9 +9,6 @@
     overflow-y: scroll;
     width: 100%;
   }
-}
-
-@media screen and (max-width: 425px) {
   .popup__close {
     display: none;
   }
