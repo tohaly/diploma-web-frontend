@@ -1,41 +1,63 @@
 @font-face {
   font-family: 'Roboto';
-  src: url('./fonts/Roboto-Regular.ttf') format('truetype');
+  src: url('./fonts/roboto/RobotoRegular.woff') format('woff'),
+    url('./fonts/roboto/RobotoRegular.ttf') format('truetype'),
+    url('./fonts/roboto/RobotoRegular.eot') format('eot');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url('./fonts/Roboto-Medium.ttf') format('truetype');
+  src: url('./fonts/roboto/RobotoMedium.woff') format('woff'),
+    url('./fonts/roboto/RobotoMedium.ttf') format('truetype'),
+    url('./fonts/roboto/RobotoMedium.eot') format('eot');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url('./fonts/Roboto-Bold.ttf') format('truetype');
+  src: url('./fonts/roboto/RobotoBold.woff') format('woff'),
+    url('./fonts/roboto/RobotoBold.ttf') format('truetype'),
+    url('./fonts/roboto/RobotoBold.eot') format('eot');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Roboto Slab';
-  src: url('./fonts/RobotoSlab-Regular.ttf') format('truetype');
+  src: url('./fonts/roboto-slab/RobotoSlabRegular.woff') format('woff'),
+    url('./fonts/roboto-slab/RobotoSlabRegular.ttf') format('truetype'),
+    url('./fonts/roboto-slab/RobotoSlabRegular.eot') format('eot');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Roboto Slab';
-  src: url('./fonts/RobotoSlab-Bold.ttf') format('truetype');
+  src: url('./fonts/roboto-slab/RobotoSlabBold.woff') format('woff'),
+    url('./fonts/roboto-slab/RobotoSlabBold.ttf') format('truetype'),
+    url('./fonts/roboto-slab/RobotoSlabBold.eot') format('eot');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url('./fonts/SourceSansPro-Regular.ttf') format('truetype');
+  src: url('./fonts/source-sans-pro/SourceSansProRegular.woff') format('woff'),
+    url('./fonts/source-sans-pro/SourceSansProRegular.ttf') format('truetype'),
+    url('./fonts/source-sans-pro/SourceSansProRegular.eot') format('eot');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/inter/Inter-Regular.woff') format('woff'),
+    url('./fonts/inter/Inter-Regular.woff2') format('woff2'),
+    url('./fonts/inter/Inter-Regular.ttf') format('truetype'),
+    url('./fonts/inter/Inter-Regular.eot') format('eot');
   font-weight: normal;
   font-style: normal;
 }
