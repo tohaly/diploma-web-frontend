@@ -162,13 +162,23 @@
     </section>
     <section class="about">
       <div class="about__container">
-        <img
-          class="about__img"
-          src="<%=require('./images/about-example.png')%>"
-          alt="Автор проекта"
-        />
+        <picture class="about__img-wrapper">
+          <source
+            srcset="<%=require('./images/author/author-medium.png')%>"
+            media="(max-width: 650px)"
+          />
+          <source
+            srcset="<%=require('./images/author/author-small.png')%>"
+            media="(max-width: 900px)"
+          />
+          <img
+            class="about__img"
+            src="<%=require('./images/author/author-big.png')%>"
+            alt="Автор проекта"
+          />
+        </picture>
         <div class="about__content">
-          <h2 class="about__title">Об атворе</h2>
+          <h2 class="about__title">Об авторе</h2>
           <p class="about__text">
             Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы
             занимаетесь, какими технологиями разработки владеете.

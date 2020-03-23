@@ -28,6 +28,9 @@
 
   .about__img {
     max-width: 272px;
+  }
+
+  .about__img-wrapper {
     margin-bottom: 24px;
   }
 
