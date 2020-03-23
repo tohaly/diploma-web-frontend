@@ -3,6 +3,10 @@
   border-radius: 100px;
   border: 1px solid #d1d2d6;
   width: 100%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
 .search-form__field:focus {

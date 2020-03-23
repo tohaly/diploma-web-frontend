@@ -6,5 +6,6 @@
 
 .about {
   max-width: 1440px;
-  padding: 80px 104px 60px;
+  padding: 80px 104px;
+  margin: 0 auto;
 }

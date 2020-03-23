@@ -4,12 +4,16 @@
   }
 
   .about__content {
-    padding: 0 0 0 56px;
+    padding: 0 0 0 32px;
   }
 
   .about__title {
     font-size: 1.9rem;
     margin-bottom: 16px;
+  }
+
+  .about__img {
+    max-width: 232px;
   }
 }
 
@@ -23,7 +27,7 @@
   }
 
   .about__img {
-    padding: 0 8px;
+    max-width: 272px;
     margin-bottom: 24px;
   }
 

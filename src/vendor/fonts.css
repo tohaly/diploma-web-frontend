@@ -5,6 +5,7 @@
     url('./fonts/roboto/RobotoRegular.eot') format('eot');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -14,6 +15,7 @@
     url('./fonts/roboto/RobotoMedium.eot') format('eot');
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -23,6 +25,7 @@
     url('./fonts/roboto/RobotoBold.eot') format('eot');
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -32,6 +35,7 @@
     url('./fonts/roboto-slab/RobotoSlabRegular.eot') format('eot');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -41,6 +45,7 @@
     url('./fonts/roboto-slab/RobotoSlabBold.eot') format('eot');
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -50,6 +55,7 @@
     url('./fonts/source-sans-pro/SourceSansProRegular.eot') format('eot');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -60,4 +66,5 @@
     url('./fonts/inter/Inter-Regular.eot') format('eot');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }

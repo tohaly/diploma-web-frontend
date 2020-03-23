@@ -1,6 +1,6 @@
 @import url('./__text-logo/header__text-logo.css');
+@import url('./__text-logo-link/header__text-logo-link.css');
 @import url('./__container/header__container.css');
-@import url('./__text-logo/_saved-news/header__text-logo_saved-news.css');
 @import url('./__universal-button/header__universal-button.css');
 @import url('./__universal-button/_saved-news/header__universal-button_saved-news.css');
 @import url('./__universal-button/_close/header__universal-button_close.css');

@@ -11,7 +11,7 @@
   }
 
   .card__title {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin-bottom: 10px;
   }
 
@@ -45,6 +45,10 @@
     grid-template-columns: repeat(auto-fill, 288px);
     grid-gap: 10px;
     margin-bottom: 15px;
+  }
+
+  .cards__title {
+    margin-bottom: 22px;
   }
 
   .card__content {

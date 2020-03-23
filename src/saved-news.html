@@ -10,21 +10,27 @@
   <body class="page">
     <header class="header header_saved-news">
       <div class="header__container">
-        <a href="./index.html" class="header__text-logo header__text-logo_saved-news">NewsExplorer</a>
+        <p class="header__text-logo header__text-logo_saved-news">
+          <a href="./index.html" class="header__text-logo-link header__text-logo-link_saved-news">NewsExplorer</a>
+        </p>      
         <nav class="menu">
           <div class="menu__container  menu__container_saved-news">
-            <a
+            <div class="menu__link menu__link_saved-news">
+              <a
               href="./index.html"
-              class="menu__link menu__link_saved-news"
+              class="menu__link-item menu__link-item_saved-news"
             >
               Главная
             </a>
-            <a href="" class="menu__link menu__link_saved-news menu__link_active menu__link_active_saved-news">Сохранённые статьи</a>
-            <button class="button menu__button menu__button_saved-news menu__button_authorization">
+            </div>
+            <div class="menu__link menu__link_saved-news menu__link_active menu__link_active_saved-news">
+              <a href="" class="menu__link-item menu__link-item_saved-news">Сохранённые статьи</a>
+            </div>            
+            <button class="button menu__button menu__button_saved-news menu__button_authorization menu__button_hidden">
               Авторизоваться
             </button>
             <button
-              class="button menu__button menu__button_saved-news menu__button_logout menu__button_hidden"
+              class="button menu__button menu__button_saved-news menu__button_logout"
             >
               Грета
               <span class="menu__logout-img menu__logout-img_saved-news"

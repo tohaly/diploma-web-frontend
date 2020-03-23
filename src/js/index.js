@@ -6,7 +6,7 @@ import '../pages/index.css';
 const toggleMobileMenu = () => {
   document.querySelector('.menu').classList.toggle('menu_is-open');
   document.querySelector('.menu__button').classList.toggle('menu__button_mobile');
-  if (window.location.pathname !== '/saved-news.html') {
+  if (!window.location.pathname.includes('/saved-news.html')) {
     document.querySelector('.header').classList.toggle('header_mobile-menu');
     document
       .querySelector('.header__universal-button')
@@ -18,7 +18,7 @@ const toggleMobileMenu = () => {
   }
 };
 
-document.addEventListener('click', () => {
+document.addEventListener('click', event => {
   if (
     event.target.classList.contains('header__universal-button') ||
     event.target.classList.contains('menu__button_mobile')
@@ -31,7 +31,7 @@ document.addEventListener('click', () => {
 
 let timer;
 
-document.addEventListener('click', () => {
+document.addEventListener('click', event => {
   if (event.target.classList.contains('card__button')) {
     event.target.nextElementSibling.classList.toggle('card__confirm_is-active');
   }
@@ -82,7 +82,7 @@ const popupUnActive = () => {
 };
 
 const toggleUniversalButton = () => {
-  if (window.location.pathname !== '/saved-news.html') {
+  if (!window.location.pathname.includes('/saved-news.html')) {
     document
       .querySelector('.header__universal-button')
       .classList.toggle('header__universal-button_close');

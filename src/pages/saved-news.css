@@ -1,4 +1,6 @@
 @import url('../blocks/header/_saved-news/header_saved-news.css');
+@import url('../blocks/header/__text-logo-link/_saved-news/header__text-logo-link_saved-news.css');
+@import url('../blocks/menu/__link-item/_saved-news/menu__link-item_saved-news.css');
 @import url('../blocks/news-info/news-info.css');
 @import url('../blocks/saved-cards/saved-cards.css');
 @import url('../blocks/cards/_saved-news/cards_saved-news.css');
