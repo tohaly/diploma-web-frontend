@@ -7,6 +7,8 @@
 @import url('./__user-name/news-info__user-name.css');
 
 .news-info {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  color: #1a1b22;
   max-width: 1440px;
   margin: 0 auto;
 }

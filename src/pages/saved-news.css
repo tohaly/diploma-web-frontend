@@ -14,3 +14,7 @@
 * {
   box-sizing: border-box;
 }
+
+.page_overflow {
+  overflow: hidden;
+}

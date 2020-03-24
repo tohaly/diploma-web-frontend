@@ -6,6 +6,8 @@
 @import url('./__title/about__title.css');
 
 .about {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  color: #1a1b22;
   max-width: 1440px;
   padding: 80px 104px;
   margin: 0 auto;

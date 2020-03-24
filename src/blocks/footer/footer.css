@@ -9,6 +9,8 @@
 @import url('./__useful-links/footer__useful-links.css');
 
 .footer {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  color: #1a1b22;
   max-width: 1440px;
   padding: 0 104px;
   margin: 0 auto;

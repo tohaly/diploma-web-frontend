@@ -21,11 +21,6 @@
   box-sizing: border-box;
 }
 
-.page {
-  font-family: 'Roboto';
-  color: #1a1b22;
-}
-
-.page__overflow {
+.page_overflow {
   overflow: hidden;
 }
