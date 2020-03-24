@@ -1,0 +1,10 @@
+.search-result__nothing-subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  color: #b6bcbf;
+  max-width: 356px;
+  text-align: center;
+  margin: 0;
+}

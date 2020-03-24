@@ -1,0 +1,10 @@
+@import url('./__item/loader__item.css');
+@import url('./__text/loader__text.css');
+
+.loader {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  color: #1a1b22;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}

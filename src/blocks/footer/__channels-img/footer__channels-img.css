@@ -1,0 +1,11 @@
+.footer__channels-img {
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: transform 0.4s ease-in-out;
+}
+
+.footer__channels-img:hover {
+  transform: scale(1.1);
+}

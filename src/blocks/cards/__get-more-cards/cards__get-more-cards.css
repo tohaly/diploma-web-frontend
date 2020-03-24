@@ -1,0 +1,14 @@
+.cards__get-more-cards {
+  align-self: center;
+  background-color: #ffffff;
+  border-radius: 80px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  padding: 20px 84px;
+}
+
+.cards__get-more-cards:hover {
+  opacity: 0.9;
+}

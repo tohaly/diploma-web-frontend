@@ -1,0 +1,7 @@
+.card__button_delete {
+  background-image: url('../../../../../images/card-control/delete.svg');
+}
+
+.card__control:hover .card__button_delete {
+  background-image: url('../../../../../images/card-control/delete-hover.svg');
+}

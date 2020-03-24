@@ -1,0 +1,8 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background: rgba(196, 196, 196, 0.01);
+  margin: 0 auto;
+  max-width: 1232px;
+}

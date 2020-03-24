@@ -1,0 +1,18 @@
+@media screen and (max-width: 510px) {
+  .popup {
+    top: 62px;
+    height: 100%;
+    background-color: transparent;
+  }
+  .popup__content {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    align-self: flex-start;
+    height: 100%;
+    padding: 16px;
+  }
+  .popup__close {
+    display: none;
+  }
+}

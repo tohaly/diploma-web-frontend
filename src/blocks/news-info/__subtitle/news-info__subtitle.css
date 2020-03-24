@@ -1,0 +1,9 @@
+.news-info__subtitle {
+  margin: 0 0 30px;
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5rem;
+  line-height: 1.15;
+  max-width: 450px;
+}

@@ -1,0 +1,7 @@
+.card__button_mark {
+  background-image: url('../../../../../images/card-control/mark-normal.svg');
+}
+
+.card__control:hover .card__button_mark {
+  background-image: url('../../../../../images/card-control/mark-hover.svg');
+}

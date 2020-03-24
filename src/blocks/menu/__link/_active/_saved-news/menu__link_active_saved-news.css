@@ -1,0 +1,7 @@
+.menu__link_active_saved-news {
+  color: #1a1b22;
+}
+
+.menu__link_active_saved-news::before {
+  background-color: #1a1b22;
+}

@@ -1,0 +1,12 @@
+@import url('./__field/search-form__field.css');
+@import url('./__button/search-form__button.css');
+
+.search-form {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  color: #1a1b22;
+  max-width: 608px;
+  width: 100%;
+  display: flex;
+  align-self: center;
+  margin-bottom: 80px;
+}

@@ -1,0 +1,7 @@
+.card__control {
+  display: flex;
+  flex-direction: row-reverse;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+}

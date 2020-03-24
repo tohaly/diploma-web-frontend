@@ -1,0 +1,6 @@
+.footer__channels-link {
+  margin: 0 32px 0 0;
+}
+.footer__channels-link:last-of-type {
+  margin-right: 0;
+}

@@ -1,0 +1,30 @@
+@media screen and (max-width: 900px) {
+  .header {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 38px;
+  }
+
+  .header__text-logo {
+    margin-top: 22px;
+    margin-bottom: 18px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 30px;
+  }
+
+  .header__text-logo {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    font-size: 1rem;
+  }
+
+  .header__universal-button {
+    display: block;
+  }
+}

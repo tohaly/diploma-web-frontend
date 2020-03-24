@@ -1,0 +1,9 @@
+.header__text-logo-link {
+  text-decoration: none;
+  font-family: 'Roboto Slab';
+  color: #fff;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.3;
+}

@@ -1,0 +1,5 @@
+.search-result__nothing {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}

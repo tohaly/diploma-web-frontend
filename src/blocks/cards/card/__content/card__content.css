@@ -1,0 +1,6 @@
+.card__content {
+  padding: 20px 6% 24px;
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+}

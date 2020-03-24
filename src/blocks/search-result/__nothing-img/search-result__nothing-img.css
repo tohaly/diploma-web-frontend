@@ -1,0 +1,8 @@
+.search-result__nothing-img {
+  width: 96px;
+  height: 96px;
+  background-image: url('../../../images/nothing-find.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 0 24px;
+}
