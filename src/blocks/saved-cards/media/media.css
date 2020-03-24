@@ -4,7 +4,7 @@
   }
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 650px) {
   .saved-cards {
     padding: 24px 16px 24px;
   }

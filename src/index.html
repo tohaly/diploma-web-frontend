@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Сервис, в котором можно найти новости по запросу и сохранить в личном кабинете"
+    />
+    <meta
+      name="keywords"
+      content="новости, новостной сайт, news api, NewsExplorer, диплом, что сейчас в мире"
+    />
+    <meta name="author" content="Anton Voytenko" />
     <title>NewsExplorer</title>
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>" />
     <link rel="shortcut icon" href="<%=require('./images/favicon.ico')%>" type="image/x-icon" />
@@ -19,7 +28,7 @@
             <nav class="menu">
               <div class="menu__container">
                 <div class="menu__link menu__link_active">
-                  <a href="#" class="menu__link-item">Главная</a>
+                  <a href="./index.html" class="menu__link-item">Главная</a>
                 </div>
                 <div class="menu__link">
                   <a href="./saved-news.html" class="menu__link-item">Сохранённые статьи</a>
@@ -52,8 +61,15 @@
           Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.
         </p>
         <form class="search-form">
-          <input class="search-form__field" type="text" placeholder="Введите тему новости" />
-          <button class="button search-form__button">Искать</button>
+          <input
+            class="search-form__field"
+            type="text"
+            placeholder="Введите тему новости"
+            required
+            minlength="2"
+            maxlength="30"
+          />
+          <button type="submit" class="button search-form__button">Искать</button>
         </form>
       </div>
     </section>
@@ -63,7 +79,7 @@
           <h2 class="cards__title">Результаты поиска</h2>
           <div class="cards__items">
             <article class="card">
-              <a href="#" class="card__link">
+              <a href="#" class="card__link" target="_blanck">
                 <img
                   class="card__img"
                   src="<%=require('./images/cards-example/image-1.jpg')%>"
@@ -84,13 +100,16 @@
               </a>
               <div class="card__control">
                 <div class="card__button card__button_mark card__button_mark_is-active"></div>
-                <p class="card__confirm card__confirm_signin">
+                <p
+                  class="card__confirm card__confirm_signin"
+                  style="display: block; animation:none"
+                >
                   Войдите, чтобы сохранять статьи
                 </p>
               </div>
             </article>
             <article class="card">
-              <a href="#" class="card__link">
+              <a href="#" class="card__link" target="_blanck">
                 <img
                   class="card__img"
                   src="<%=require('./images/cards-example/image-2.jpg')%>"
@@ -116,7 +135,7 @@
               </div>
             </article>
             <article class="card">
-              <a href="#" class="card__link">
+              <a href="#" class="card__link" target="_blanck">
                 <img
                   class="card__img"
                   src="<%=require('./images/cards-example/image-3.jpg')%>"
@@ -145,7 +164,6 @@
               </div>
             </article>
           </div>
-
           <button class="button cards__get-more-cards">Показать еще</button>
         </div>
         <div class="loader">

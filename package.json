@@ -14,10 +14,10 @@
     "type": "git",
     "url": ""
   },
-  "author": "",
+  "author": "Anton Voytenko",
   "license": "ISC",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/tohaly/diploma-web-frontend"
   },
   "homepage": "",
   "devDependencies": {

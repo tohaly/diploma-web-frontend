@@ -26,7 +26,9 @@
             <div
               class="menu__link menu__link_saved-news menu__link_active menu__link_active_saved-news"
             >
-              <a href="" class="menu__link-item menu__link-item_saved-news">Сохранённые статьи</a>
+              <a href="./saved-news.html" class="menu__link-item menu__link-item_saved-news"
+                >Сохранённые статьи</a
+              >
             </div>
             <button
               class="button menu__button menu__button_saved-news menu__button_authorization menu__button_hidden"
@@ -69,7 +71,7 @@
         <div class="cards cards_saved-news">
           <div class="cards__items">
             <article class="card">
-              <a href="#" class="card__link">
+              <a href="#" class="card__link" target="_blanck">
                 <img
                   class="card__img"
                   src="<%=require('./images/cards-example/image-1.jpg')%>"
@@ -90,7 +92,10 @@
               </a>
               <div class="card__control">
                 <div class="card__button card__button_delete"></div>
-                <p class="card__confirm card__confirm_delete">
+                <p
+                  class="card__confirm card__confirm_delete"
+                  style="display: block; animation:none"
+                >
                   Убрать из сохранённых
                 </p>
               </div>
@@ -99,7 +104,7 @@
               </p>
             </article>
             <article class="card">
-              <a href="#" class="card__link">
+              <a href="#" class="card__link" target="_blanck">
                 <img
                   class="card__img"
                   src="<%=require('./images/cards-example/image-2.jpg')%>"
@@ -128,7 +133,7 @@
               </p>
             </article>
             <article class="card">
-              <a href="#" class="card__link">
+              <a href="#" class="card__link" target="_blanck">
                 <img
                   class="card__img"
                   src="<%=require('./images/cards-example/image-3.jpg')%>"
@@ -160,7 +165,7 @@
               </p>
             </article>
             <article class="card">
-              <a href="#" class="card__link">
+              <a href="#" class="card__link" target="_blanck">
                 <img
                   class="card__img"
                   src="<%=require('./images/cards-example/image-4.jpg')%>"
@@ -192,7 +197,7 @@
               </p>
             </article>
             <article class="card">
-              <a href="#" class="card__link">
+              <a href="#" class="card__link" target="_blanck">
                 <img
                   class="card__img"
                   src="<%=require('./images/cards-example/image-5.jpg')%>"

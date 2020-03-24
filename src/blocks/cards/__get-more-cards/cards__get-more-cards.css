@@ -1,14 +1,12 @@
 .cards__get-more-cards {
   align-self: center;
-  background: #ffffff;
+  background-color: #ffffff;
   border-radius: 80px;
   font-style: normal;
   font-weight: 500;
   font-size: 1.1rem;
   line-height: 1.3;
   padding: 20px 84px;
-  border: none;
-  cursor: pointer;
 }
 
 .cards__get-more-cards:hover {

@@ -57,6 +57,7 @@ document.addEventListener('mouseover', event => {
 
 document.addEventListener('click', event => {
   if (event.target.classList.contains('card__confirm_delete')) {
+    // eslint-disable-next-line no-alert
     alert('Новость успешно удалена');
   }
 });

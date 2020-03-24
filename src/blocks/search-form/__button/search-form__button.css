@@ -1,7 +1,6 @@
 .search-form__button {
   color: #fff;
   background-color: #2f71e5;
-  border: none;
   font-size: 1.1rem;
   font-style: normal;
   font-weight: 500;
@@ -9,7 +8,6 @@
   padding: 20px 54px;
   border-radius: 100px;
   margin-left: -12%;
-  cursor: pointer;
   transition: background-color 0.4s ease-in;
 }
 
@@ -19,8 +17,4 @@
 
 .search-form__button:active {
   background-color: #2a65cc;
-}
-
-.search-form__button:focus {
-  outline: none;
 }
