@@ -17,8 +17,6 @@
 @import url('../blocks/loader/_is-acive/loader_is-active.css');
 @import url('../media/index.css');
 
-@import url('./saved-news.css');
-
 * {
   box-sizing: border-box;
 }

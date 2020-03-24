@@ -1,2 +1,6 @@
+@import url('../blocks/header/media/media.css');
+@import url('../blocks/menu/media/media.css');
+@import url('../blocks/cards/media/media.css');
 @import url('../blocks/news-info/media/media.css');
 @import url('../blocks/saved-cards/media/media.css');
+@import url('../blocks/footer/media/media.css');

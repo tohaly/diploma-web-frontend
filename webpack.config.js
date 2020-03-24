@@ -8,10 +8,10 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
-  entry: { main: './src/js/index.js' },
+  entry: { main: './src/js/index.js', saved_news: './src/js/saved-news.js' },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[chunkhash].js'
+    filename: 'js/[name].[chunkhash].js'
   },
   module: {
     rules: [
@@ -26,7 +26,8 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              esModule: false
+              esModule: false,
+              name: 'favicon/[name].[ext]'
             }
           }
         ]
@@ -68,14 +69,20 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: '[name].[ext]'
+              name: 'vendor/[name].[ext]'
             }
           }
         ]
       },
       {
         test: /\.css$/,
-        use: [isDev ? 'style-loader' : MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
+        use: [
+          isDev
+            ? { loader: 'style-loader' }
+            : { loader: MiniCssExtractPlugin.loader, options: { publicPath: '../' } },
+          'css-loader',
+          'postcss-loader'
+        ]
       }
     ]
   },
@@ -88,7 +95,7 @@ module.exports = {
     overlay: true
   },
   plugins: [
-    new MiniCssExtractPlugin({ filename: 'style.[contenthash].css' }),
+    new MiniCssExtractPlugin({ filename: './style/[name].[contenthash].css' }),
     new HtmlWebpackPlugin({
       inject: false,
       hash: true,
