@@ -3,6 +3,7 @@ import '../pages/saved-news.css';
 const toggleMobileMenu = () => {
   document.querySelector('.menu').classList.toggle('menu_is-open');
   document.querySelector('.menu__button').classList.toggle('menu__button_mobile');
+  document.querySelector('.page').classList.toggle('page_overflow');
   if (!window.location.pathname.includes('/saved-news.html')) {
     document.querySelector('.header').classList.toggle('header_mobile-menu');
     document
