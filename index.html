@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title></title>
-    <link rel="stylesheet" href="style.bcb8f5a45e27b09d59c2.css?cbb3955665c199633ca0" />
+    <title>NewsExplorer</title>
+    <link rel="stylesheet" href="./style/main.79bf358c106de05be9f4.css?976e68829545a6d7af3a" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
   </head>
   <body class="page">
     <section class="lead">
@@ -162,13 +163,23 @@
     </section>
     <section class="about">
       <div class="about__container">
-        <img
-          class="about__img"
-          src="images/about-example.png"
-          alt="Автор проекта"
-        />
+        <picture class="about__img-wrapper">
+          <source
+            srcset="images/author-medium.png"
+            media="(max-width: 650px)"
+          />
+          <source
+            srcset="images/author-small.png"
+            media="(max-width: 900px)"
+          />
+          <img
+            class="about__img"
+            src="images/author-big.png"
+            alt="Автор проекта"
+          />
+        </picture>
         <div class="about__content">
-          <h2 class="about__title">Об атворе</h2>
+          <h2 class="about__title">Об авторе</h2>
           <p class="about__text">
             Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы
             занимаетесь, какими технологиями разработки владеете.
@@ -180,10 +191,10 @@
         </div>
       </div>
     </section>
-    <footer class=footer> <div class=footer__container> <p class=footer__copyright>© 2020 Supersite, Powered by News API</p> <nav class=footer__useful-links> <a href=# class=footer__useful-links-item>Главная</a> <a href=# class=footer__useful-links-item>Яндекс.Практикум</a> </nav> <div class=footer__channels> <a href=# class=footer__channels-link target=_blanck> <div class="footer__channels-img footer__channels-img_github"></div> </a> <a href=# class=footer__channels-link target=_blanck> <div class="footer__channels-img footer__channels-img_facebook"></div> </a> </div> </div> </footer> 
+    <footer class=footer> <div class=footer__container> <p class=footer__copyright>© 2020 Supersite, Powered by News API</p> <nav class=footer__useful-links> <a href=./index.html class=footer__useful-links-item>Главная</a> <a href=https://praktikum.yandex.ru/ class=footer__useful-links-item>Яндекс.Практикум</a> </nav> <div class=footer__channels> <a href=https://github.com/tohaly class=footer__channels-link target=_blanck> <div class="footer__channels-img footer__channels-img_github"></div> </a> <a href=https://www.facebook.com/avojtenko class=footer__channels-link target=_blanck> <div class="footer__channels-img footer__channels-img_facebook"></div> </a> </div> </div> </footer> 
 
     <section class="popup"></section>
 
-    <script src="main.1f07b937800703d6b3df.js?cbb3955665c199633ca0"></script>
+    <script src="js/main.fccfd8537fce8c2930b2.js?976e68829545a6d7af3a"></script>
   </body>
 </html>
