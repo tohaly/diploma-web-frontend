@@ -1,5 +1,10 @@
 .menu__logout-img {
+  width: 24px;
+  height: 24px;
   margin-left: 12px;
   display: flex;
   align-self: center;
+  background-image: url('../../../images/logout.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
 }

@@ -3,6 +3,7 @@
 @import url('./__link-item/menu__link-item.css');
 @import url('./__button/menu__button.css');
 @import url('./__logout-img/menu__logout-img.css');
+@import url('./__logout-img/_saved-news/menu__logout-img_saved-news.css');
 @import url('./__link//_active/menu__link_active.css');
 @import url('./__button/_hidden/menu__button_hidden.css');
 @import url('./__link/_active/_saved-news/menu__link_active_saved-news.css');
