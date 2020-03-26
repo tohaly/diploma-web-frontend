@@ -1,4 +1,5 @@
 @import url('./__field/search-form__field.css');
+@import url('./__field/_error-message/search-form__field_error-message.css');
 @import url('./__button/search-form__button.css');
 
 .search-form {
@@ -9,4 +10,5 @@
   display: flex;
   align-self: center;
   margin-bottom: 80px;
+  position: relative;
 }
