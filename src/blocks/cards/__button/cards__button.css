@@ -1,4 +1,4 @@
-.cards__get-more-cards {
+.cards__button {
   align-self: center;
   background-color: #ffffff;
   border-radius: 80px;
@@ -9,6 +9,6 @@
   padding: 20px 84px;
 }
 
-.cards__get-more-cards:hover {
+.cards__button:hover {
   opacity: 0.9;
 }

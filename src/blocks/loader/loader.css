@@ -1,6 +1,15 @@
 @import url('./__item/loader__item.css');
 @import url('./__text/loader__text.css');
 
+@keyframes drop-loader {
+  0% {
+    transform: translateY(200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .loader {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   color: #1a1b22;
@@ -8,4 +17,5 @@
   align-items: center;
   display: none;
   padding: 80px 104px;
+  animation: drop-loader 0.4s forwards;
 }
