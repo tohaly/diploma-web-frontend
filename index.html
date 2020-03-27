@@ -14,13 +14,13 @@
     />
     <meta name="author" content="Anton Voytenko" />
     <title>NewsExplorer</title>
-    <link rel="stylesheet" href="./style/main.1b31a831ccf7932f88e6.css?fa3e30b68197ba4e2532" />
+    <link rel="stylesheet" href="./style/main.8564595970bd13662315.css?b03da36f679ca4e10e27" />
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
   </head>
   <body class="page">
     <section class="lead">
       <div class="lead__container">
-        <header class="header header_saved-news"> <div class=header__container> <p class=header__text-logo> <a href=./index.html class=header__text-logo-link>NewsExplorer</a> </p> <nav class=menu> <div class=menu__container> <div class=menu__link> <a href=./index.html class=menu__link-item> Главная </a> </div> <div class=menu__link> <a href=./saved-news.html class=menu__link-item>Сохранённые статьи</a> </div> </div> </nav> <button class="header__universal-button header__universal-button_saved-news"></button> </div> </header> 
+        <header class="header header_saved-news"> <div class=header__container> <p class=header__text-logo> <a href=./index.html class=header__text-logo-link>NewsExplorer</a> </p> <nav class=menu> <div class=menu__container> <div class=menu__link> <a href=./index.html class=menu__link-item> Главная </a> </div> </div> </nav> <button class="header__universal-button header__universal-button_saved-news"></button> </div> </header> 
         <h1 class="lead__title">
           Что в мире<br />
           творится?
@@ -28,115 +28,30 @@
         <p class="lead__subtitle">
           Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.
         </p>
-        <form class="search-form">
+        <form class="search-form" name="searchForm" novalidate>
           <input
             class="search-form__field"
+            name="searchField"
             type="text"
             placeholder="Введите тему новости"
             required
             minlength="2"
             maxlength="30"
           />
-          <button type="submit" class="button search-form__button">Искать</button>
+          <button class="button search-form__button" name="searchButton">Искать</button>
         </form>
       </div>
     </section>
     <section class="search-result">
+      <div class="loader">
+        <div class="loader__item"></div>
+        <p class="loader__text">Идет поиск новостей...</p>
+      </div>
       <div class="search-result__container">
-        <div class="cards cards_is-active">
+        <div class="cards">
           <h2 class="cards__title">Результаты поиска</h2>
-          <div class="cards__items">
-            <article class="card">
-              <a href="#" class="card__link" target="_blanck">
-                <img
-                  class="card__img"
-                  src="images/image-1.jpg"
-                  alt="Национальное достояние- парки"
-                />
-                <div class="card__content">
-                  <time class="card__pub-time" datetime="2019-08-02">2 августа, 2019</time>
-                  <h3 class="card__title">Национальное достояние – парки</h3>
-                  <p class="card__text">
-                    В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-                    складываться система национальных парков – охраняемых территорий, где и сегодня
-                    каждый может приобщиться к природе.
-                  </p>
-                  <p class="card__resource">
-                    Лента.ру
-                  </p>
-                </div>
-              </a>
-              <div class="card__control">
-                <div class="card__button card__button_mark card__button_mark_is-active"></div>
-                <p
-                  class="card__confirm card__confirm_signin"
-                  style="display: block; animation:none"
-                >
-                  Войдите, чтобы сохранять статьи
-                </p>
-              </div>
-            </article>
-            <article class="card">
-              <a href="#" class="card__link" target="_blanck">
-                <img
-                  class="card__img"
-                  src="images/image-2.jpg"
-                  alt="Национальное достояние- парки"
-                />
-                <div class="card__content">
-                  <time class="card__pub-time" datetime="2019-08-02">2 августа, 2019</time>
-                  <h3 class="card__title">Лесные огоньки: история одной фотографии</h3>
-                  <p class="card__text">
-                    Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы
-                    запечатлеть ускользающую красоту одного из местных чудес природы.
-                  </p>
-                  <p class="card__resource">
-                    Медуза
-                  </p>
-                </div>
-              </a>
-              <div class="card__control">
-                <div class="card__button card__button_mark"></div>
-                <p class="card__confirm card__confirm_signin">
-                  Войдите, чтобы сохранять статьи
-                </p>
-              </div>
-            </article>
-            <article class="card">
-              <a href="#" class="card__link" target="_blanck">
-                <img
-                  class="card__img"
-                  src="images/image-3.jpg"
-                  alt="Национальное достояние- парки"
-                />
-                <div class="card__content">
-                  <time class="card__pub-time" datetime="2019-08-02">2 августа, 2019</time>
-                  <h3 class="card__title">
-                    «Первозданная тайга»: новый фотопроект Игоря Шпиленка
-                  </h3>
-                  <p class="card__text">
-                    Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о
-                    необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу,
-                    где...
-                  </p>
-                  <p class="card__resource">
-                    Медиазона
-                  </p>
-                </div>
-              </a>
-              <div class="card__control">
-                <div class="card__button card__button_mark"></div>
-                <p class="card__confirm card__confirm_signin">
-                  Войдите, чтобы сохранять статьи
-                </p>
-              </div>
-            </article>
-          </div>
-          <button class="button cards__get-more-cards">Показать еще</button>
-        </div>
-        <div class="loader">
-          <div class="loader__item"></div>
-          <p class="loader__text">Идет поиск новостей...</p>
+          <div class="cards__items"></div>
+          <button class="button cards__button">Показать еще</button>
         </div>
         <div class="search-result__nothing">
           <div class="search-result__nothing-img"></div>
@@ -181,6 +96,6 @@
 
     <section class="popup"></section>
 
-    <script src="js/main.91e6fa74c8afc9a1e79f.js?fa3e30b68197ba4e2532"></script>
+    <script src="js/main.2c5f121f6c91364c4857.js?b03da36f679ca4e10e27"></script>
   </body>
 </html>
