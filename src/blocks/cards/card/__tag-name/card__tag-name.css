@@ -1,5 +1,5 @@
 .card__tag-name {
-  display: flex;
+  display: none;
   flex-direction: row-reverse;
   position: absolute;
   left: 24px;

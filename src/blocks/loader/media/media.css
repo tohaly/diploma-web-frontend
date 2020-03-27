@@ -1,11 +1,11 @@
 @media screen and (max-width: 900px) {
-  .search-result__nothing {
+  .loader {
     padding: 40px;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .search-result__nothing {
+  .loader {
     padding: 32px 16px;
   }
 }

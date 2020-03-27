@@ -1,4 +1,8 @@
 @media screen and (max-width: 900px) {
+  .cards {
+    padding: 40px;
+  }
+
   .cards__items {
     grid-template-columns: repeat(auto-fill, 224px);
     grid-gap: 8px;
@@ -41,6 +45,10 @@
 }
 
 @media screen and (max-width: 650px) {
+  .cards {
+    padding: 32px 16px;
+  }
+
   .cards__items {
     grid-template-columns: repeat(auto-fill, 288px);
     grid-gap: 10px;

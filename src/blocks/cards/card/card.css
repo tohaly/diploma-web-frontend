@@ -13,6 +13,7 @@
 @import url('./__content/card__content.css');
 @import url('./__link/card__link.css');
 @import url('./__tag-name/card__tag-name.css');
+@import url('./__tag-name/_is-active/card__tag-name_is-active.css');
 
 .card {
   display: flex;
