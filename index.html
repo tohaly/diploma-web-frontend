@@ -14,13 +14,13 @@
     />
     <meta name="author" content="Anton Voytenko" />
     <title>NewsExplorer</title>
-    <link rel="stylesheet" href="./style/main.8564595970bd13662315.css?b03da36f679ca4e10e27" />
+    <link rel="stylesheet" href="./style/main.818bf4ae6dc7cdc0644e.css?2909100b1d493414f75f" />
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
   </head>
   <body class="page">
     <section class="lead">
       <div class="lead__container">
-        <header class="header header_saved-news"> <div class=header__container> <p class=header__text-logo> <a href=./index.html class=header__text-logo-link>NewsExplorer</a> </p> <nav class=menu> <div class=menu__container> <div class=menu__link> <a href=./index.html class=menu__link-item> Главная </a> </div> </div> </nav> <button class="header__universal-button header__universal-button_saved-news"></button> </div> </header> 
+        <header class="header header_saved-news"> <div class=header__container> <p class=header__text-logo> <a href=./index.html class=header__text-logo-link>NewsExplorer</a> </p> <nav class=menu> <div class=menu__container> <div class="menu__link menu__link_main"> <a href=./index.html class="menu__link-item menu__item"> Главная </a> </div> </div> </nav> <button class="header__universal-button header__universal-button_hamburger"></button> </div> </header> 
         <h1 class="lead__title">
           Что в мире<br />
           творится?
@@ -35,7 +35,7 @@
             type="text"
             placeholder="Введите тему новости"
             required
-            minlength="2"
+            minlength="1"
             maxlength="30"
           />
           <button class="button search-form__button" name="searchButton">Искать</button>
@@ -50,7 +50,7 @@
       <div class="search-result__container">
         <div class="cards">
           <h2 class="cards__title">Результаты поиска</h2>
-          <div class="cards__items"></div>
+          <div class="cards__list"></div>
           <button class="button cards__button">Показать еще</button>
         </div>
         <div class="search-result__nothing">
@@ -92,10 +92,155 @@
         </div>
       </div>
     </section>
+
     <footer class=footer> <div class=footer__container> <p class=footer__copyright>© 2020 Supersite, Powered by News API</p> <nav class=footer__useful-links> <a href=./index.html class=footer__useful-links-item>Главная</a> <a href=https://praktikum.yandex.ru/ class=footer__useful-links-item target=_blanck>Яндекс.Практикум</a> </nav> <div class=footer__channels> <a href=https://github.com/tohaly class=footer__channels-link target=_blanck> <div class="footer__channels-img footer__channels-img_github"></div> </a> <a href=https://www.facebook.com/avojtenko class=footer__channels-link target=_blanck> <div class="footer__channels-img footer__channels-img_facebook"></div> </a> </div> </div> </footer> 
 
     <section class="popup"></section>
-
-    <script src="js/main.2c5f121f6c91364c4857.js?b03da36f679ca4e10e27"></script>
+    <section class="api-response">
+      <div class="api-response__container">
+        <p class="api-response__message">Привет я сообщение</p>
+      </div>
+    </section>
+    <template class="popup_signin">
+      <div class="popup__content popup__content_signin">
+        <div class="popup__loader">
+          <div class="popup__loader-item"></div>
+        </div>
+        <div class="popup__close"></div>
+        <h3 class="popup__title">Вход</h3>
+        <form class="popup__form" name="signin" novalidate>
+          <label class="popup__label" for="email">Email</label>
+          <input
+            class="popup__input popup__input-type-email"
+            placeholder="Введите почту"
+            name="email"
+            type="email"
+            required
+            pattern="^[0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1}@([-0-9A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,}$"
+          />
+          <div class="popup__error-wrapper">
+            <span class="popup__error-message popup__error-message_input" aria-live="polite"
+              >Ошибка валидации поля</span
+            >
+          </div>
+          <label class="popup__label" for="password">Пароль</label>
+          <input
+            class="popup__input popup__input_type-password"
+            placeholder="Введите пароль"
+            type="password"
+            name="password"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*"
+            required
+            minlength="8"
+          />
+          <div class="popup__error-wrapper">
+            <span class="popup__error-message popup__error-message_input" aria-live="polite"
+              >Ошибка валидации поля</span
+            >
+          </div>
+          <div class="popup__error-wrapper popup__error-wrapper_form">
+            <span class="popup__error-message popup__error-message_form" aria-live="polite"
+              >Здесь ошибка сервера</span
+            >
+          </div>
+          <button
+            type="button"
+            class="button popup__button popup__button_signin"
+            name="submitButton"
+            disabled
+          >
+            Войти
+          </button>
+          <p class="popup__alternative">
+            или
+            <span class="popup__alternative-link popup__alternative-link_signup"
+              >Зарегистрироваться</span
+            >
+          </p>
+        </form>
+      </div>
+    </template>
+    <template class="popup_signup">
+      <div class="popup__content popup__content_signup">
+        <div class="popup__loader">
+          <div class="popup__loader-item"></div>
+        </div>
+        <div class="popup__close"></div>
+        <h3 class="popup__title">Регистрация</h3>
+        <form class="popup__form" name="signup" novalidate>
+          <label class="popup__label" for="email">Email</label>
+          <input
+            class="popup__input popup__input-type-email"
+            placeholder="Введите почту"
+            name="email"
+            type="email"
+            required
+            pattern="^[0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1}@([-0-9A-Za-z]{1,}\.){1,3}[-A-Za-z]{2,}$"
+          />
+          <div class="popup__error-wrapper">
+            <span class="popup__error-message popup__error-message_input" aria-live="polite"
+              >Ваш пароль не соответствует требованиям к паролю.</span
+            >
+          </div>
+          <label class="popup__label" for="password">Пароль</label>
+          <input
+            class="popup__input popup__input_type-password"
+            placeholder="Введите пароль"
+            type="password"
+            name="password"
+            required
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*"
+            minlength="8"
+          />
+          <div class="popup__error-wrapper">
+            <span class="popup__error-message popup__error-message_input" aria-live="polite"
+              >Ошибка валидации поля</span
+            >
+          </div>
+          <label class="popup__label" for="name">Имя</label>
+          <input
+            class="popup__input popup__input_type-name"
+            placeholder="Введите своё имя"
+            type="name"
+            name="name"
+            required
+            minlength="2"
+            maxlength="30"
+          />
+          <div class="popup__error-wrapper">
+            <span class="popup__error-message popup__error-message_input" aria-live="polite"
+              >Ошибка валидации поля</span
+            >
+          </div>
+          <div class="popup__error-wrapper">
+            <span class="popup__error-message popup__error-message_form" aria-live="polite"
+              >Здесь ошибка сервера</span
+            >
+          </div>
+          <button
+            type="button"
+            class="button popup__button popup__button_signup"
+            name="submitButton"
+            disabled
+          >
+            Зарегистрироваться
+          </button>
+          <p class="popup__alternative">
+            или <span class="popup__alternative-link popup__alternative-link_signin">Войти</span>
+          </p>
+        </form>
+      </div>
+    </template>
+    <template class="popup_success">
+      <div class="popup__content popup__content_successes">
+        <div class="popup__close"></div>
+        <h3 class="popup__title popup__title_successes">Пользователь успешно зарегистрирован!</h3>
+        <span
+          class="popup__alternative-link popup__alternative-link_successes popup__alternative-link_signin"
+          >Выполнить вход</span
+        >
+      </div>
+    </template>
+    <script src="js/main.b2fa45a25ac57c3dc4fe.js?2909100b1d493414f75f"></script>
   </body>
 </html>

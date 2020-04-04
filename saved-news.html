@@ -5,192 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>NewsExplorer</title>
-    <link rel="stylesheet" href="./style/saved_news.e912a05017cfc679ae4e.css?b03da36f679ca4e10e27" />
+    <link rel="stylesheet" href="./style/saved_news.c828edfa400efb871dcd.css?2909100b1d493414f75f" />
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
   </head>
   <body class="page">
-    <header class="header header_saved-news"> <div class=header__container> <p class=header__text-logo> <a href=./index.html class=header__text-logo-link>NewsExplorer</a> </p> <nav class=menu> <div class=menu__container> <div class=menu__link> <a href=./index.html class=menu__link-item> Главная </a> </div> </div> </nav> <button class="header__universal-button header__universal-button_saved-news"></button> </div> </header> 
+    <header class="header header_saved-news"> <div class=header__container> <p class=header__text-logo> <a href=./index.html class=header__text-logo-link>NewsExplorer</a> </p> <nav class=menu> <div class=menu__container> <div class="menu__link menu__link_main"> <a href=./index.html class="menu__link-item menu__item"> Главная </a> </div> </div> </nav> <button class="header__universal-button header__universal-button_hamburger"></button> </div> </header> 
     <section class="news-info">
       <div class="news-info__container">
         <h2 class="news-info__title">Сохранённые статьи</h2>
         <p class="news-info__subtitle">
-          <span class="news-info__user-name">Грета</span>, у вас
-          <span class="news-info__numb-of-news">5 сохранённых статей</span>
+          <span class="news-info__user-name"></span><span class="news-info__text"></span>
+          <span class="news-info__numb-of-news"></span>
         </p>
         <p class="news-info__keywords">
-          По ключевым словам: <span class="news-info__keywords_tag">Природа</span>,
-          <span class="news-info__keywords_tag">Тайга</span> и
-          <span class="news-info__keywords_tag">2 другим</span>
+          По ключевым словам:
+          <span class="news-info__keywords_tag news-info__keywords_tag_one"></span>,
+          <span class="news-info__keywords_tag news-info__keywords_tag_two"></span>
+          <span class="news-info__keywords_tag news-info__keywords_tag_three"></span>
         </p>
+        <div class="news-info__loader">
+          <div class="news-info__loader-item"></div>
+          <div class="news-info__loader-item"></div>
+          <div class="news-info__loader-item"></div>
+        </div>
       </div>
     </section>
     <section class="saved-cards">
       <div class="saved-cards__container">
         <div class="cards cards_saved-news">
-          <div class="cards__items">
-            <article class="card">
-              <a href="#" class="card__link" target="_blanck">
-                <img
-                  class="card__img"
-                  src="images/image-1.jpg"
-                  alt="Национальное достояние- парки"
-                />
-                <div class="card__content">
-                  <time class="card__pub-time" datetime="2019-08-02">2 августа, 2019</time>
-                  <h3 class="card__title">Национальное достояние – парки</h3>
-                  <p class="card__text">
-                    В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-                    складываться система национальных парков – охраняемых территорий, где и сегодня
-                    каждый может приобщиться к природе.
-                  </p>
-                  <p class="card__resource">
-                    Лента.ру
-                  </p>
-                </div>
-              </a>
-              <div class="card__control">
-                <div class="card__button card__button_delete"></div>
-                <p
-                  class="card__confirm card__confirm_delete"
-                  style="display: block; animation:none"
-                >
-                  Убрать из сохранённых
-                </p>
-              </div>
-              <p class="card__tag-name">
-                Природа
-              </p>
-            </article>
-            <article class="card">
-              <a href="#" class="card__link" target="_blanck">
-                <img
-                  class="card__img"
-                  src="images/image-2.jpg"
-                  alt="Национальное достояние- парки"
-                />
-                <div class="card__content">
-                  <time class="card__pub-time" datetime="2019-08-02">2 августа, 2019</time>
-                  <h3 class="card__title">Лесные огоньки: история одной фотографии</h3>
-                  <p class="card__text">
-                    Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы
-                    запечатлеть ускользающую красоту одного из местных чудес природы.
-                  </p>
-                  <p class="card__resource">
-                    Медуза
-                  </p>
-                </div>
-              </a>
-              <div class="card__control">
-                <div class="card__button card__button_delete"></div>
-                <p class="card__confirm card__confirm_delete">
-                  Убрать из сохранённых
-                </p>
-              </div>
-              <p class="card__tag-name">
-                Природа
-              </p>
-            </article>
-            <article class="card">
-              <a href="#" class="card__link" target="_blanck">
-                <img
-                  class="card__img"
-                  src="images/image-3.jpg"
-                  alt="Национальное достояние- парки"
-                />
-                <div class="card__content">
-                  <time class="card__pub-time" datetime="2019-08-02">2 августа, 2019</time>
-                  <h3 class="card__title">
-                    «Первозданная тайга»: новый фотопроект Игоря Шпиленка
-                  </h3>
-                  <p class="card__text">
-                    Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о
-                    необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу,
-                    где...
-                  </p>
-                  <p class="card__resource">
-                    Медиазона
-                  </p>
-                </div>
-              </a>
-              <div class="card__control">
-                <div class="card__button card__button_delete"></div>
-                <p class="card__confirm card__confirm_delete">
-                  Убрать из сохранённых
-                </p>
-              </div>
-              <p class="card__tag-name">
-                Природа
-              </p>
-            </article>
-            <article class="card">
-              <a href="#" class="card__link" target="_blanck">
-                <img
-                  class="card__img"
-                  src="images/image-4.jpg"
-                  alt="Национальное достояние- парки"
-                />
-                <div class="card__content">
-                  <time class="card__pub-time" datetime="2019-08-02">2 августа, 2019</time>
-                  <h3 class="card__title">
-                    Национальное достояние – парки
-                  </h3>
-                  <p class="card__text">
-                    В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-                    складываться система национальных парков – охраняемых территорий, где и сегодня
-                    каждый может приобщиться к природе.
-                  </p>
-                  <p class="card__resource">
-                    Дзен
-                  </p>
-                </div>
-              </a>
-              <div class="card__control">
-                <div class="card__button card__button_delete"></div>
-                <p class="card__confirm card__confirm_delete">
-                  Убрать из сохранённых
-                </p>
-              </div>
-              <p class="card__tag-name">
-                Природа
-              </p>
-            </article>
-            <article class="card">
-              <a href="#" class="card__link" target="_blanck">
-                <img
-                  class="card__img"
-                  src="images/image-5.jpg"
-                  alt="Национальное достояние- парки"
-                />
-                <div class="card__content">
-                  <time class="card__pub-time" datetime="2019-08-02">2 августа, 2019</time>
-                  <h3 class="card__title">
-                    Лесные огоньки: история одной фотографии
-                  </h3>
-                  <p class="card__text">
-                    Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы
-                    запечатлеть ускользающую красоту одного из местных чудес природы.
-                  </p>
-                  <p class="card__resource">
-                    Афиша
-                  </p>
-                </div>
-              </a>
-              <div class="card__control">
-                <div class="card__button card__button_delete"></div>
-                <p class="card__confirm card__confirm_delete">
-                  Убрать из сохранённых
-                </p>
-              </div>
-              <p class="card__tag-name">
-                Природа
-              </p>
-            </article>
-          </div>
+          <div class="cards__list"></div>
         </div>
+      </div>
+      <div class="saved-cards__server-messages">
+        <p class="saved-cards__server-messages-title">Сейчас, у вас нет сохраненных новостей</p>
+        <p class="saved-cards__server-messages-subtitle">
+          Перейдите на главную и добавьте пару интересных статьей
+        </p>
+      </div>
+      <div class="loader">
+        <div class="loader__item"></div>
+        <p class="loader__text">Ищем сохраненные новости...</p>
       </div>
     </section>
     <section class="popup"></section>
+    <section class="api-response">
+      <div class="api-response__container">
+        <p class="api-response__message">Привет я сообщение</p>
+      </div>
+    </section>
     <footer class=footer> <div class=footer__container> <p class=footer__copyright>© 2020 Supersite, Powered by News API</p> <nav class=footer__useful-links> <a href=./index.html class=footer__useful-links-item>Главная</a> <a href=https://praktikum.yandex.ru/ class=footer__useful-links-item target=_blanck>Яндекс.Практикум</a> </nav> <div class=footer__channels> <a href=https://github.com/tohaly class=footer__channels-link target=_blanck> <div class="footer__channels-img footer__channels-img_github"></div> </a> <a href=https://www.facebook.com/avojtenko class=footer__channels-link target=_blanck> <div class="footer__channels-img footer__channels-img_facebook"></div> </a> </div> </div> </footer> 
-    <script src="js/saved_news.8acde9fee8573a42cd0d.js?b03da36f679ca4e10e27"></script>
+    <script src="js/saved_news.d48b7ae7eefc16430220.js?2909100b1d493414f75f"></script>
   </body>
 </html>
