@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>NewsExplorer</title>
-    <link rel="stylesheet" href="./style/saved_news.4c45a310f2b0fca64c0e.css?97cd04bce978c3fc464e" />
+    <link rel="stylesheet" href="./style/saved_news.62904dde2b8ac8c491fe.css?ae8477bf333a2704fe52" />
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
   </head>
   <body style="display:none" class="page">
@@ -54,6 +54,31 @@
       </div>
     </section>
     <footer class=footer> <div class=footer__container> <p class=footer__copyright>© 2020 Supersite, Powered by News API</p> <nav class=footer__useful-links> <a href=./index.html class=footer__useful-links-item>Главная</a> <a href=https://praktikum.yandex.ru/ class=footer__useful-links-item target=_blanck>Яндекс.Практикум</a> </nav> <div class=footer__channels> <a href=https://github.com/tohaly class=footer__channels-link target=_blanck> <div class="footer__channels-img footer__channels-img_github"></div> </a> <a href=https://www.facebook.com/avojtenko class=footer__channels-link target=_blanck> <div class="footer__channels-img footer__channels-img_facebook"></div> </a> </div> </div> </footer> 
-    <script src="js/saved_news.c61e0193ad99932213fa.js?97cd04bce978c3fc464e"></script>
+    <template class="template_popup_confirm">
+      <div class="popup__content popup__content_delete">
+        <div class="popup__loader">
+          <div class="popup__loader-item"></div>
+        </div>
+        <div class="popup__close"></div>
+        <h3 class="popup__title">Вы действительно хотите удалить новость?</h3>
+        <form class="popup__form" name="signup" novalidate>
+          <button
+            type="button"
+            class="button popup__button popup__button_is-active  popup__button_confirm"
+            name="submitButton"
+          >
+            Удалить
+          </button>
+          <button
+            type="button"
+            class="button popup__button popup__button_is-active popup__button_cancel"
+            name="submitButton"
+          >
+            Отмена
+          </button>
+        </form>
+      </div>
+    </template>
+    <script src="js/saved_news.3baa12cdaa9a7ebb39bc.js?ae8477bf333a2704fe52"></script>
   </body>
 </html>
