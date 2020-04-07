@@ -1,0 +1,28 @@
+@import url('../../vendor/fonts.css');
+@import url('../../vendor/normalize.css');
+
+@import url('../../blocks/button/button.css');
+@import url('../../blocks/lead/lead.css');
+@import url('../../templates/header/header.css');
+@import url('../../templates/header/_mobile-menu/header_mobile-menu.css');
+@import url('../../blocks/menu/menu.css');
+@import url('../../blocks/search-form/search-form.css');
+@import url('../../blocks/search-result/search-result.css');
+@import url('../../blocks/cards/cards.css');
+@import url('../../blocks/cards/_is-active/cards_is-active.css');
+@import url('../../blocks/server-response/server-response.css');
+@import url('../../blocks/server-response/_is-active/server-response_is-active.css');
+@import url('../../blocks/about/about.css');
+@import url('../../templates/footer/footer.css');
+@import url('../../blocks/popup/popup.css');
+@import url('../../blocks/popup/_is-active/popup_is-active.css');
+@import url('../../blocks/loader/loader.css');
+@import url('../../blocks/loader/_is-active/loader_is-active.css');
+@import url('../../blocks/popup-messages/popup-messages.css');
+@import url('../../blocks/popup-messages/_is-active/popup-messages_is-active.css');
+
+@import url('../../media/index.css');
+
+* {
+  box-sizing: border-box;
+}

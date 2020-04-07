@@ -17,6 +17,10 @@
   .news-info__keywords {
     font-size: 0.9rem;
   }
+
+  .news-info__loader {
+    padding: 24px 40px 0;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -32,11 +36,16 @@
   }
 
   .news-info__subtitle {
-    max-width: 250px;
+    max-width: 254px;
   }
 
   .news-info__keywords {
     font-size: 1.1rem;
     max-width: 300px;
+  }
+
+  .news-info__loader {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }

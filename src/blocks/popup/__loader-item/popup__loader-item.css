@@ -1,0 +1,14 @@
+@keyframes spin-popup-loader {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.popup__loader-item {
+  width: 44px;
+  height: 44px;
+  border: 1px solid #888;
+  border-bottom-color: #fff;
+  border-radius: 50%;
+  animation: spin-popup-loader 0.75s infinite linear;
+}

@@ -1,0 +1,21 @@
+@keyframes shake-response-img {
+  0% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.server-response__img {
+  width: 96px;
+  height: 96px;
+  background-image: url('../../../images/nothing-find.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 0 24px;
+  animation: shake-response-img 0.1s both 0.4s 2;
+}

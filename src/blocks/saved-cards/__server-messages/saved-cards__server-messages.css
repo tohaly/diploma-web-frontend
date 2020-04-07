@@ -1,0 +1,14 @@
+@keyframes drop-sever-message {
+  0% {
+    transform: translateY(-300px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.saved-cards__server-messages {
+  padding: 104px 80px;
+  display: none;
+  animation: drop-sever-message 0.4s forwards;
+}

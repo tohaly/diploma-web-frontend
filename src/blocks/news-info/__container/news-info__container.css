@@ -2,4 +2,5 @@
   padding: 40px 104px 56px;
   display: flex;
   flex-direction: column;
+  position: relative;
 }

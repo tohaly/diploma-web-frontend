@@ -1,7 +1,16 @@
+@keyframes hover-delete-button {
+  0% {
+    fill: #b6bcbf;
+  }
+  100% {
+    fill: #1a1b22;
+  }
+}
+
 .card__button_delete {
-  background-image: url('../../../../../images/card-control/delete.svg');
+  fill: #b6bcbf;
 }
 
 .card__control:hover .card__button_delete {
-  background-image: url('../../../../../images/card-control/delete-hover.svg');
+  animation: hover-delete-button 0.4s forwards;
 }

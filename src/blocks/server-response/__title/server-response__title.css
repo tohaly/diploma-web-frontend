@@ -1,0 +1,9 @@
+.server-response__title {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 1.15;
+  margin: 0 0 16px;
+  text-align: center;
+}

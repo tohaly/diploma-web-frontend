@@ -3,7 +3,7 @@
     padding: 40px;
   }
 
-  .cards__items {
+  .cards__list {
     grid-template-columns: repeat(auto-fill, 224px);
     grid-gap: 8px;
     margin-bottom: 22px;
@@ -35,12 +35,16 @@
     top: 8px;
   }
 
-  .card__confirm {
+  .card__button-info {
     margin: 8px 0;
   }
 
   .cards__button {
     padding: 15px 60px 17px;
+  }
+
+  .card__img {
+    max-height: 150px;
   }
 }
 
@@ -49,7 +53,7 @@
     padding: 32px 16px;
   }
 
-  .cards__items {
+  .cards__list {
     grid-template-columns: repeat(auto-fill, 288px);
     grid-gap: 10px;
     margin-bottom: 15px;
@@ -74,6 +78,10 @@
 
   .card__text {
     margin-bottom: 10px;
+  }
+
+  .card__img {
+    max-height: 196px;
   }
 }
 

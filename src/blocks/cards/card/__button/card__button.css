@@ -1,7 +1,22 @@
 .card__button {
   width: 40px;
   height: 40px;
-  background-size: contain;
-  background-repeat: no-repeat;
   cursor: pointer;
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  transition: outline 0.4s;
+}
+
+.card__button:active {
+  outline: none;
+  border: 1px solid #2f71e5;
+  border-radius: 8px;
+}
+
+.card__button:focus {
+  outline: none;
 }

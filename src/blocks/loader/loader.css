@@ -10,6 +10,15 @@
   }
 }
 
+@keyframes scaling-loader {
+  0% {
+    overflow: 0;
+  }
+  100% {
+    overflow: 1;
+  }
+}
+
 .loader {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   color: #1a1b22;
@@ -18,4 +27,14 @@
   display: none;
   padding: 80px 104px;
   animation: drop-loader 0.4s forwards;
+}
+
+.loader_card {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: scaling-loader 0.4s forwards;
 }

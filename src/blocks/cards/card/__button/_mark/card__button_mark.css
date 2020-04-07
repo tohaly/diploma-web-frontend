@@ -1,7 +1,18 @@
-.card__button_mark {
-  background-image: url('../../../../../images/card-control/mark-normal.svg');
+@keyframes hover-mark-button {
+  0% {
+    stroke: #b6bcbf;
+  }
+  100% {
+    stroke: #1a1b22;
+  }
 }
 
-.card__control:hover .card__button_mark {
-  background-image: url('../../../../../images/card-control/mark-hover.svg');
+.card__button_mark {
+  stroke: #b6bcbf;
+  stroke-width: 2;
+  fill: transparent;
+}
+
+.card__button_mark:hover {
+  animation: hover-mark-button 0.4s forwards;
 }

@@ -13,4 +13,6 @@
   margin-bottom: 13px;
   cursor: pointer;
   display: flex;
+  position: relative;
+  z-index: 1;
 }

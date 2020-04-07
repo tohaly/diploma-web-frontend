@@ -1,4 +1,4 @@
-@keyframes spin {
+@keyframes spin-loader {
   100% {
     transform: rotate(360deg);
   }
@@ -12,5 +12,11 @@
   border-bottom-color: #888;
   border-radius: 50%;
   margin-bottom: 24px;
-  animation: spin 0.75s infinite linear;
+  animation: spin-loader 0.75s infinite linear;
+}
+
+.loader__item_card {
+  border: 5px solid #b6bcbf;
+  border-bottom-color: #fff;
+  margin: auto;
 }

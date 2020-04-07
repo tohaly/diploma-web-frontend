@@ -1,12 +1,12 @@
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 650px) {
   .popup {
     top: 62px;
     height: 100%;
     background-color: transparent;
-  }
-  .popup__content {
     overflow-x: hidden;
     overflow-y: scroll;
+  }
+  .popup__content {
     width: 100%;
     align-self: flex-start;
     height: 100%;
@@ -14,5 +14,18 @@
   }
   .popup__close {
     display: none;
+  }
+}
+
+@media screen and (max-height: 733px) and (max-width: 670px) {
+  .popup {
+    height: 100%;
+  }
+  .popup__content {
+    top: 62px;
+    width: 100%;
+    align-self: flex-start;
+    height: 100%;
+    padding: 16px;
   }
 }
