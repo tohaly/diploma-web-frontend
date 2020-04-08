@@ -74,12 +74,13 @@ export default class Header extends BaseComponent {
       this._menu.classList.add('menu_is-open');
       this._menuContainer.classList.remove('menu__container_closed');
       this._getMobileHeader(true);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
       this._menuContainer.classList.add('menu__container_closed');
       setTimeout(() => {
         this._menu.classList.remove('menu_is-open');
         this._getMobileHeader(false);
-      }, 250);
+      }, 300);
     }
   }
 
