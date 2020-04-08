@@ -25,7 +25,7 @@ export default class PopupMessages extends BaseComponent {
     setTimeout(this._switchResponse, 1000);
   }
 
-  floatOut(message) {
+  render(message) {
     this._setMessage(message);
     this._switchResponse(true);
     this._drown();
