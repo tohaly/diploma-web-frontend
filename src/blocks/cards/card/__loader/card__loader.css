@@ -14,4 +14,5 @@
   display: none;
   padding: 16px;
   animation: get-soft-loader 0.4s forwards;
+  z-index: 4;
 }

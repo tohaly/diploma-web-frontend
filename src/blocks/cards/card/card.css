@@ -37,4 +37,9 @@
   position: relative;
   height: 100%;
   animation: drop-card 0.4s forwards;
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
 }

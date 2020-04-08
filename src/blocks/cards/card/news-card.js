@@ -33,10 +33,39 @@ export default class NewsCard extends BaseComponent {
     })}, ${newDate.getFullYear()}`;
   }
 
-  _template(isSavedNews, isLogin, isMarked = false) {
+  _setTexts(props) {
+    props.forEach(({ element, text }) => {
+      element.textContent = text;
+    });
+  }
+
+  _setAttributes(props) {
+    props.forEach(({ element, name, value }) => {
+      element.setAttribute(name, value);
+    });
+  }
+
+  _setContent(element) {
     const { _id, keyword, title, text, date, source, link, image } = this.data;
     const TEXT_LENGTH =
       window.innerWidth <= WIDTH_FOR_CUT_TEXT ? MOBILE_TEXT_LENGTH : MAIN_TEXT_LENGTH;
+
+    element.querySelector('.card__text').textContent = this._cutExcessText(text, TEXT_LENGTH);
+    element.querySelector('.card__title').textContent = this._cutExcessText(title, TITLE_LENGTH);
+    element.querySelector('.card__resource').textContent = source;
+    element.querySelector('.card__text').textContent = this._cutExcessText(text, TEXT_LENGTH);
+    element.querySelector('.card__pub-time').textContent = this._transformDate(date);
+    element.querySelector('.card__tag-name').textContent = keyword;
+
+    element.querySelector('.card').setAttribute('_id', String(_id));
+    element.querySelector('.card__link').setAttribute('href', link);
+    element.querySelector('.card__img').setAttribute('src', image);
+    element.querySelector('.card__img').setAttribute('alt', title);
+    element.querySelector('.card__pub-time').setAttribute('datetime', date);
+  }
+
+  _template(isSavedNews, isLogin, isMarked = false) {
+    const element = document.createElement('div');
     const deleteButton = ` 
       <button class="card__button card__button_delete">
         <svg width="18" height="19">
@@ -50,31 +79,21 @@ export default class NewsCard extends BaseComponent {
     `;
     const markButton = `
       <button class="card__button card__button_mark 
-        ${isMarked ? 'card__button_mark_is-active' : 'bug'}"  
+        ${isMarked ? 'card__button_mark_is-active' : ''}"  
         ${!isLogin ? 'disabled' : ''}>
         <svg width="14" height="19">
           <path d="M6.38 12.71L1 16.94V1h12v15.94l-5.38-4.23-.62-.48-.62.48z" />
         </svg>
       </button>
     `;
-
-    return `<article class="card" _id="${String(_id)}">
-    <a href="${link}" class="card__link" target="_blanck">
-      <img
-        class="card__img"
-        src="${image}"
-        alt="${title}"
-        onerror="this.onerror=null;this.src='${DEFAULT_IMAGE}';"
-      />
+    const card = `<article class="card">
+    <a class="card__link" target="_blanck">
+      <img class="card__img" onerror="this.onerror=null;this.src='${DEFAULT_IMAGE}';"/>
       <div class="card__content">
-        <time class="card__pub-time" datetime=${date}>${this._transformDate(date)}</time>
-        <h3 class="card__title">${this._cutExcessText(title, TITLE_LENGTH)}</h3>
-        <p class="card__text">
-          ${this._cutExcessText(text, TEXT_LENGTH)}
-        </p>
-        <p class="card__resource">
-          ${source}
-        </p>
+        <time class="card__pub-time"></time>
+        <h3 class="card__title">}</h3>
+        <p class="card__text"></p>
+        <p class="card__resource"></p>
       </div>
     </a>
     <div class="card__control">
@@ -83,13 +102,15 @@ export default class NewsCard extends BaseComponent {
         ${isSavedNews ? 'Убрать из сохранённых' : 'Войдите, чтобы сохранять статьи'}
       </a>
     </div>
-    <p class="card__tag-name ${isSavedNews ? 'card__tag-name_is-active' : ''}">
-      ${keyword}
-    </p>
+    <p class="card__tag-name ${isSavedNews ? 'card__tag-name_is-active' : ''}"></p>
     <div class="card__loader">
       <p class="card__loader-text">Идет обработка...</p>
     </div>
   </article>`;
+
+    element.insertAdjacentHTML('beforeend', card.trim());
+
+    return element;
   }
 
   switchMarkButton() {
@@ -109,9 +130,10 @@ export default class NewsCard extends BaseComponent {
   }
 
   create(isLogin, isSavedNews, isMarked) {
-    const element = document.createElement('div');
-    element.insertAdjacentHTML('beforeend', this._template(isSavedNews, isLogin, isMarked).trim());
+    const element = this._template(isSavedNews, isLogin, isMarked);
+
     this.cardElement = element.firstChild;
+    this._setContent(element);
 
     return this.cardElement;
   }
