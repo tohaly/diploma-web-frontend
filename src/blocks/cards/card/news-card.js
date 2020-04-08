@@ -70,8 +70,6 @@ export default class NewsCard extends BaseComponent {
       <button class="card__button card__button_delete">
         <svg width="18" height="19">
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
             d="M12 0H6v2H0v2h18V2h-6V0zM2 6v11c0 1.1.9 2 2 2h10a2 2 0 002-2V6h-2v11H4V6H2zm4 0v9h2V6H6zm4 0v9h2V6h-2z"
           />
         </svg>
