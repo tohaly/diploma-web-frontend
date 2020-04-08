@@ -6,7 +6,7 @@ export default class Cookie {
     };
 
     const arrKey = Object.keys(options);
-    let cookieString = `${name}=${value}; `;
+    let cookieString = `${encodeURIComponent(name)}=${encodeURIComponent(value)}; `;
 
     arrKey.forEach(key => {
       cookieString += `${key}=${options[key]}; `;
@@ -19,7 +19,7 @@ export default class Cookie {
     const matches = document.cookie.match(
       new RegExp(`(?:^|; )${name.replace(/([\\.$?*|{}\\(\\)\\[\\]\\\\\/\+^])/g, '\\$1')}=([^;]*)`)
     );
-    return matches ? matches[1] : undefined;
+    return matches ? decodeURIComponent(matches[1]) : undefined;
   }
 
   deleteCookie(name) {
