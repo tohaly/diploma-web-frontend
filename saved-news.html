@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>NewsExplorer</title>
-    <link rel="stylesheet" href="./style/saved_news.c8512e1261be3fa02d18.css?7de4c39c18ce09920f47" />
+    <link rel="stylesheet" href="./style/saved_news.4474435054786df0d3c4.css?4702e562dcd7ea9cb9fc" />
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
   </head>
   <body style="display:none" class="page">
@@ -36,11 +36,10 @@
           <div class="cards__list"></div>
         </div>
       </div>
-      <div class="saved-cards__server-messages">
-        <p class="saved-cards__server-messages-title">Сейчас, у вас нет сохраненных новостей</p>
-        <p class="saved-cards__server-messages-subtitle">
-          Перейдите на главную и добавьте пару интересных статьей
-        </p>
+      <div class="server-response">
+        <p class="server-response__subtitle"></p>
+        <h4 class="server-response__title"></h4>
+        <div class="server-response__img"></div>
       </div>
       <div class="loader">
         <div class="loader__item"></div>
@@ -48,9 +47,9 @@
       </div>
     </section>
     <section class="popup"></section>
-    <section class="api-response">
-      <div class="api-response__container">
-        <p class="api-response__message">Привет я сообщение</p>
+    <section class="popup-messages">
+      <div class="popup-messages__container">
+        <p class="popup-messages__message"></p>
       </div>
     </section>
     <footer class=footer> <div class=footer__container> <p class=footer__copyright>© 2020 Supersite, Powered by News API</p> <nav class=footer__useful-links> <a href=./index.html class=footer__useful-links-item>Главная</a> <a href=https://praktikum.yandex.ru/ class=footer__useful-links-item target=_blanck>Яндекс.Практикум</a> </nav> <div class=footer__channels> <a href=https://github.com/tohaly class=footer__channels-link target=_blanck> <div class="footer__channels-img footer__channels-img_github"></div> </a> <a href=https://www.facebook.com/avojtenko class=footer__channels-link target=_blanck> <div class="footer__channels-img footer__channels-img_facebook"></div> </a> </div> </div> </footer> 
@@ -76,9 +75,12 @@
           >
             Отмена
           </button>
+          <div class="popup__error-wrapper popup__error-wrapper_form">
+            <span class="popup__error-message popup__error-message_form" aria-live="polite"></span>
+          </div>
         </form>
       </div>
     </template>
-    <script src="js/saved_news.a02e3aa92413b0663594.js?7de4c39c18ce09920f47"></script>
+    <script src="js/saved_news.de8580159f39b2595827.js?4702e562dcd7ea9cb9fc"></script>
   </body>
 </html>

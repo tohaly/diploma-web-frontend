@@ -14,7 +14,7 @@
     />
     <meta name="author" content="Anton Voytenko" />
     <title>NewsExplorer</title>
-    <link rel="stylesheet" href="./style/main.82e7951c6f2e7807417b.css?7de4c39c18ce09920f47" />
+    <link rel="stylesheet" href="./style/main.092f19774f610cd4b3d4.css?4702e562dcd7ea9cb9fc" />
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
   </head>
   <body style="display:none" class="page">
@@ -36,7 +36,7 @@
             placeholder="Введите тему новости"
             required
             minlength="1"
-            maxlength="30"
+            maxlength="15"
           />
           <button class="button search-form__button" name="searchButton">Искать</button>
         </form>
@@ -53,12 +53,10 @@
           <div class="cards__list"></div>
           <button class="button cards__button">Показать еще</button>
         </div>
-        <div class="search-result__nothing">
-          <div class="search-result__nothing-img"></div>
-          <h4 class="search-result__nothing-title">Ничего не найдено</h4>
-          <p class="search-result__nothing-subtitle">
-            К сожалению по вашему запросу ничего не найдено.
-          </p>
+        <div class="server-response">
+          <p class="server-response__subtitle"></p>
+          <h4 class="server-response__title"></h4>
+          <div class="server-response__img"></div>
         </div>
       </div>
     </section>
@@ -96,9 +94,9 @@
     <footer class=footer> <div class=footer__container> <p class=footer__copyright>© 2020 Supersite, Powered by News API</p> <nav class=footer__useful-links> <a href=./index.html class=footer__useful-links-item>Главная</a> <a href=https://praktikum.yandex.ru/ class=footer__useful-links-item target=_blanck>Яндекс.Практикум</a> </nav> <div class=footer__channels> <a href=https://github.com/tohaly class=footer__channels-link target=_blanck> <div class="footer__channels-img footer__channels-img_github"></div> </a> <a href=https://www.facebook.com/avojtenko class=footer__channels-link target=_blanck> <div class="footer__channels-img footer__channels-img_facebook"></div> </a> </div> </div> </footer> 
 
     <section class="popup"></section>
-    <section class="api-response">
-      <div class="api-response__container">
-        <p class="api-response__message">Привет я сообщение</p>
+    <section class="popup-messages">
+      <div class="popup-messages__container">
+        <p class="popup-messages__message"></p>
       </div>
     </section>
     <template class="template_popup_signin">
@@ -119,9 +117,7 @@
             pattern="^[0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1}@([-0-9A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,}$"
           />
           <div class="popup__error-wrapper">
-            <span class="popup__error-message popup__error-message_input" aria-live="polite"
-              >Ошибка валидации поля</span
-            >
+            <span class="popup__error-message popup__error-message_input" aria-live="polite"></span>
           </div>
           <label class="popup__label" for="password">Пароль</label>
           <input
@@ -134,14 +130,10 @@
             minlength="8"
           />
           <div class="popup__error-wrapper">
-            <span class="popup__error-message popup__error-message_input" aria-live="polite"
-              >Ошибка валидации поля</span
-            >
+            <span class="popup__error-message popup__error-message_input" aria-live="polite"></span>
           </div>
           <div class="popup__error-wrapper popup__error-wrapper_form">
-            <span class="popup__error-message popup__error-message_form" aria-live="polite"
-              >Здесь ошибка сервера</span
-            >
+            <span class="popup__error-message popup__error-message_form" aria-live="polite"></span>
           </div>
           <button
             type="button"
@@ -178,9 +170,7 @@
             pattern="^[0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1}@([-0-9A-Za-z]{1,}\.){1,3}[-A-Za-z]{2,}$"
           />
           <div class="popup__error-wrapper">
-            <span class="popup__error-message popup__error-message_input" aria-live="polite"
-              >Ваш пароль не соответствует требованиям к паролю.</span
-            >
+            <span class="popup__error-message popup__error-message_input" aria-live="polite"></span>
           </div>
           <label class="popup__label" for="password">Пароль</label>
           <input
@@ -193,9 +183,7 @@
             minlength="8"
           />
           <div class="popup__error-wrapper">
-            <span class="popup__error-message popup__error-message_input" aria-live="polite"
-              >Ошибка валидации поля</span
-            >
+            <span class="popup__error-message popup__error-message_input" aria-live="polite"></span>
           </div>
           <label class="popup__label" for="name">Имя</label>
           <input
@@ -208,14 +196,10 @@
             maxlength="14"
           />
           <div class="popup__error-wrapper">
-            <span class="popup__error-message popup__error-message_input" aria-live="polite"
-              >Ошибка валидации поля</span
-            >
+            <span class="popup__error-message popup__error-message_input" aria-live="polite"></span>
           </div>
           <div class="popup__error-wrapper">
-            <span class="popup__error-message popup__error-message_form" aria-live="polite"
-              >Здесь ошибка сервера</span
-            >
+            <span class="popup__error-message popup__error-message_form" aria-live="polite"></span>
           </div>
           <button
             type="button"
@@ -241,6 +225,6 @@
         >
       </div>
     </template>
-    <script src="js/main.07d47524df07e2464cfa.js?7de4c39c18ce09920f47"></script>
+    <script src="js/main.53bdb5b67c3ee2c43b19.js?4702e562dcd7ea9cb9fc"></script>
   </body>
 </html>
