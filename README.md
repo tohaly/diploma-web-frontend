@@ -1,6 +1,6 @@
 # Дипломный проект NewsExplorer
 
-Version: v.0.0.1
+Version: v.0.1.0
 
 ## Описание Проекта
 
@@ -11,6 +11,16 @@ Version: v.0.0.1
 
 **Используемые технологии:** JS, CSS, HTML, WebPack, GIT, Babel, Eslint, Prettier.
 
+## Ссылки на развернутое приложение
+
+https://diploma-web.ml
+
+https://www.diploma-web.ml
+
+gh-pages:
+
+https://tohaly.github.io/diploma-web-frontend/
+
 ## Локальный запуск проекта
 
 1. Склонировать репозиторий
@@ -18,7 +28,9 @@ Version: v.0.0.1
    ```
        npm install
    ```
-3. Запустить локальный сервер
+3. Так же для локального запуска можно установить и настроить сервер `https://github.com/tohaly/diploma-web-backend`. _Для того, чтобы обойтись без установки сервера нужно в файле кофнига `~\src\js\constants\main-api-config.js` поменять переменную для development-среды на https://api.diploma-web.ml_
+
+4. Запустить локальный сервер
    ```
        npm run dev
    ```
