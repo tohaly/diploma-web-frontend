@@ -16,6 +16,10 @@
   .popup__close {
     display: none;
   }
+
+  .popup__input {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-height: 450px) and (max-width: 800px) {
