@@ -44,7 +44,6 @@ export default class Form extends BaseComponent {
 
     if (element.validity.valueMissing) {
       this._toggleErrorMessage(errElement, false, REQUIRED_FIELD);
-      this._toggleErrorInputStyle(element, false);
       return false;
     }
 

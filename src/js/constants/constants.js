@@ -16,6 +16,7 @@ export default {
   NOTHING_FOUND_MORE: 'К сожалению по вашему запросу ничего не найдено',
   RECOMMENDATION: 'Совет: Перейдите на главную и добавьте пару статьей',
   NO_SAVED_ARTICLES: 'Упс, кажется тут пусто',
+  TEXT_NOT_FOUND: 'Текст отсутствует...',
 
   // Server errors
 

@@ -18,6 +18,7 @@ import SavedCardList from '../../blocks/cards/__list/cards-list';
 import PopupMessages from '../../blocks/popup-messages/popup-messages';
 import NewsInfo from '../../blocks/news-info/news-info';
 import PopupConfirm from '../../blocks/popup/popup-confirm';
+import Form from '../../js/components/form';
 
 // Import helpers
 
@@ -49,11 +50,11 @@ const {
   RECOMMENDATION,
   REPEAT_LATER,
   LAST_ARTICLE,
-  NO_SAVED_ARTICLES,
-  SHORT_ERR_MESSAGE
+  NO_SAVED_ARTICLES
 } = CONSTANTS;
 
 const popupContainer = document.querySelector('.popup');
+const popupFocusClassName = 'popup__button_confirm';
 const templateSigninPopup = document.querySelector('.template_popup_confirm');
 const cardListContainer = document.querySelector('.cards__list');
 const errMessageContainer = document.querySelector('.server-response');
@@ -70,11 +71,10 @@ const mainApi = new MainApi(MAIN_API_URL);
 const savedCardList = new SavedCardList(cardListContainer, errMessageContainer);
 const popupMessages = new PopupMessages(popupMessagesContainer);
 const newsInfo = new NewsInfo(newsInfoContainer, cardListContainer, pageProps);
-const popupConfirm = new PopupConfirm(templateSigninPopup, popupContainer);
+const popupConfirm = new PopupConfirm(templateSigninPopup, popupContainer, popupFocusClassName);
+const form = new Form();
 
-const renderPageAfterCardDelete = (_id, deleteFunction) => {
-  deleteFunction();
-
+const renderPageAfterCardDelete = () => {
   savedCards.pop();
 
   if (!savedCards.length) {
@@ -87,14 +87,16 @@ const renderPageAfterCardDelete = (_id, deleteFunction) => {
   newsInfo.render();
 };
 
-const deleteNewsCardFromServer = (_id, deleteFunction, loader) => {
-  loader();
+const deleteNewsCardFromServer = (_id, deleteFunction) => {
+  popupConfirm.renderLoader(true);
 
   mainApi
     .removeArticle(_id)
-    .then(() => renderPageAfterCardDelete(_id, deleteFunction))
-    .catch(() => popupMessages.render(SHORT_ERR_MESSAGE))
-    .finally(() => loader());
+    .then(() => deleteFunction())
+    .then(() => renderPageAfterCardDelete())
+    .then(() => popupConfirm.close())
+    .catch(() => form.setServerError())
+    .finally(() => popupConfirm.renderLoader(false));
 };
 
 const createCard = article => {
@@ -105,7 +107,7 @@ const createCard = article => {
   card.setHandlers([
     {
       event: 'click',
-      element: card.cardElement.querySelector('.card__button'),
+      element: card.button,
       callback: () => {
         const { _id } = card.data;
 
@@ -118,8 +120,7 @@ const createCard = article => {
             element: document,
             callback: event => {
               if (event.target.classList.contains('popup__button_confirm')) {
-                deleteNewsCardFromServer(_id, card.delete, card.renderLoader);
-                popupConfirm.close();
+                deleteNewsCardFromServer(_id, card.delete);
               }
             }
           }

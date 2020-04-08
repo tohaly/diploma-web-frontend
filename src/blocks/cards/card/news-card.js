@@ -9,6 +9,7 @@ export default class NewsCard extends BaseComponent {
     super();
     this.data = data;
     this.cardElement = null;
+    this.button = null;
 
     this.delete = this.delete.bind(this);
     this.getCardData = this.getCardData.bind(this);
@@ -31,18 +32,6 @@ export default class NewsCard extends BaseComponent {
       month: 'long',
       day: 'numeric'
     })}, ${newDate.getFullYear()}`;
-  }
-
-  _setTexts(props) {
-    props.forEach(({ element, text }) => {
-      element.textContent = text;
-    });
-  }
-
-  _setAttributes(props) {
-    props.forEach(({ element, name, value }) => {
-      element.setAttribute(name, value);
-    });
   }
 
   _setContent(element) {
@@ -111,34 +100,8 @@ export default class NewsCard extends BaseComponent {
     return element;
   }
 
-  switchMarkButton() {
-    this.cardElement.querySelector('.card__button').classList.toggle('card__button_mark_is-active');
-  }
-
-  getCardData() {
-    if (!this.cardElement.querySelector('.card__button_mark_is-active')) {
-      this.data._id = this.cardElement.getAttribute('_id');
-      return this.data;
-    }
-    return this.cardElement.getAttribute('_id');
-  }
-
   renderLoader() {
     this.cardElement.querySelector('.card__loader').classList.toggle('card__loader_is-active');
-  }
-
-  create(isLogin, isSavedNews, isMarked) {
-    const element = this._template(isSavedNews, isLogin, isMarked);
-
-    this.cardElement = element.firstChild;
-    this._setContent(element);
-
-    return this.cardElement;
-  }
-
-  delete() {
-    this.cardElement.remove();
-    this.removeHandlers();
   }
 
   renderMarkButtonAfterActions(isLogin, isMarked = false) {
@@ -157,5 +120,32 @@ export default class NewsCard extends BaseComponent {
       button.classList.remove('card__button_mark_is-active');
       loginInfo.classList.add('card__button-info_is-active');
     }
+  }
+
+  switchMarkButton() {
+    this.cardElement.querySelector('.card__button').classList.toggle('card__button_mark_is-active');
+  }
+
+  getCardData() {
+    if (!this.cardElement.querySelector('.card__button_mark_is-active')) {
+      this.data._id = this.cardElement.getAttribute('_id');
+      return this.data;
+    }
+    return this.cardElement.getAttribute('_id');
+  }
+
+  create(isLogin, isSavedNews, isMarked) {
+    const element = this._template(isSavedNews, isLogin, isMarked);
+
+    this.cardElement = element.firstChild;
+    this.button = this.cardElement.querySelector('.card__button');
+    this._setContent(element);
+
+    return this.cardElement;
+  }
+
+  delete() {
+    this.cardElement.remove();
+    this.removeHandlers();
   }
 }

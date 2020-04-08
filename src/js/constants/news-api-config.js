@@ -1,5 +1,5 @@
 export default {
-  URL: 'http://newsapi.org/v2',
+  URL: NODE_ENV === 'development' ? 'http://newsapi.org/v2' : 'https://newsapi.org/v2',
   LANG: 'ru',
   WHERE_LOOKING: 'qInTitle', // qInTitle - search in title / q - search in title and body
   KEY: '6b548abf117b49e3857d6096d2297a1c',

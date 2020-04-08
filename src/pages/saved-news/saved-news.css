@@ -3,6 +3,7 @@
 @import url('../../blocks/button/button.css');
 @import url('../../templates/header/header.css');
 @import url('../../templates/header/_mobile-menu/header_mobile-menu.css');
+@import url('../../templates/header/_saved-news/header_saved-news.css');
 @import url('../../blocks/menu/menu.css');
 @import url('../../blocks/news-info/news-info.css');
 @import url('../../blocks/saved-cards/saved-cards.css');

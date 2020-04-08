@@ -42,12 +42,14 @@ const {
   DELETED_SUCCESS,
   REPEAT_LATER,
   NOTHING_FOUND,
-  NOTHING_FOUND_MORE
+  NOTHING_FOUND_MORE,
+  SHORT_ERR_MESSAGE,
+  TEXT_NOT_FOUND
 } = CONSTANTS;
 
 const cards = {
   classCopy: [],
-  nodes: [],
+  elements: [],
   savedCards: []
 };
 
@@ -62,6 +64,7 @@ const templateSigninPopup = document.querySelector('.template_popup_signin');
 const templateSignupPopup = document.querySelector('.template_popup_signup');
 const templateSuccessPopup = document.querySelector('.template_popup_success');
 const popupMessagesContainer = document.querySelector('.popup-messages');
+const popupFocusClassName = 'popup__input';
 const cardListContainer = document.querySelector('.cards__list');
 const errMessageContainer = document.querySelector('.server-response');
 const headerContainer = document.querySelector('.header');
@@ -74,9 +77,9 @@ const cardList = new CardListFoundNews(cardListContainer, errMessageContainer);
 const newsApi = new NewsApi(NEWS_API_CONFIG);
 const mainApi = new MainApi(MAIN_API_URL);
 const popupMessages = new PopupMessages(popupMessagesContainer);
-const popupSignin = new Popup(templateSigninPopup, popupContainer);
-const popupSignup = new Popup(templateSignupPopup, popupContainer);
-const popupSuccess = new Popup(templateSuccessPopup, popupContainer);
+const popupSignin = new Popup(templateSigninPopup, popupContainer, popupFocusClassName);
+const popupSignup = new Popup(templateSignupPopup, popupContainer, popupFocusClassName);
+const popupSuccess = new Popup(templateSuccessPopup, popupContainer, popupFocusClassName);
 const form = new Form();
 
 //  Function declaration
@@ -138,7 +141,7 @@ const addOrDeleteCardFromServer = (data, loader, switchButton) => {
       .then(results => getNewId(oldId, results._id, cards.elements))
       .then(_id => addCardToSavedCardList(_id, data))
       .then(() => switchButton())
-      .catch(() => popupMessages.render(SERVER_ERROR))
+      .catch(() => popupMessages.render(SHORT_ERR_MESSAGE))
       .finally(() => loader());
   } else {
     mainApi
@@ -146,21 +149,31 @@ const addOrDeleteCardFromServer = (data, loader, switchButton) => {
       .then(() => switchButton())
       .then(() => popupMessages.render(DELETED_SUCCESS))
       .then(() => deleteCardFromSavedCardList(data))
-      .catch(() => popupMessages.render(SERVER_ERROR))
+      .catch(() => popupMessages.render(SHORT_ERR_MESSAGE))
       .finally(() => loader());
   }
+};
+
+const validateUrl = url => {
+  if (!url) {
+    return `${LOCATION}/${DEFAULT_IMAGE}`;
+  }
+  if (url.startsWith('http://')) {
+    return url.replace('http://', 'https://');
+  }
+  return url;
 };
 
 const parsingArticle = (data, keyword, _id) => {
   return {
     _id,
     keyword,
-    title: data.title,
-    text: data.description,
+    title: data.title || TEXT_NOT_FOUND,
+    text: data.description || TEXT_NOT_FOUND,
     date: data.publishedAt,
     source: data.source.name,
-    link: data.url,
-    image: data.urlToImage || `${LOCATION}/${DEFAULT_IMAGE}`
+    link: validateUrl(data.url),
+    image: validateUrl(data.urlToImage)
   };
 };
 
@@ -185,7 +198,7 @@ const createCard = (article, keyword, _id) => {
   newsCard.setHandlers([
     {
       event: 'click',
-      element: newsCard.cardElement.querySelector('.card__button'),
+      element: newsCard.button,
       callback: () => {
         const data = newsCard.getCardData();
         addOrDeleteCardFromServer(data, newsCard.renderLoader, newsCard.switchMarkButton);
@@ -264,11 +277,6 @@ const getMarkedCards = list => {
   });
 };
 
-const errLogout = () => {
-  popupMessages.render(SERVER_ERROR);
-  logOut();
-};
-
 const lazyLoadSavedCards = () => {
   return mainApi
     .getArticles()
@@ -277,7 +285,7 @@ const lazyLoadSavedCards = () => {
 
       return res.data;
     })
-    .catch(() => errLogout());
+    .catch(() => popupMessages.render(SHORT_ERR_MESSAGE));
 };
 
 const ClosePopupsEvent = () => {

@@ -4,7 +4,6 @@ export default class PopupConfirm extends Popup {
   _handlePopupCancelButton(event) {
     if (event.target.classList.contains('popup__button_cancel')) {
       this.close();
-      console.log('hi');
     }
   }
 

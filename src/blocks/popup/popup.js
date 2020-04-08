@@ -1,10 +1,11 @@
 import BaseComponent from '../../js/components/base-components';
 
 export default class Popup extends BaseComponent {
-  constructor(template, container) {
+  constructor(template, container, focusClassName) {
     super();
     this._template = template;
     this._container = container;
+    this._focusClassName = focusClassName;
     this.closeButton = null;
 
     this.open = this.open.bind(this);
@@ -29,12 +30,12 @@ export default class Popup extends BaseComponent {
     }
   }
 
-  renderLoader(isLoad) {
+  renderLoader(isStart) {
     const loader = document.querySelector('.popup__loader');
 
-    if (isLoad && loader) {
+    if (isStart) {
       loader.classList.add('popup__loader_is-active');
-    } else if (!isLoad && loader) {
+    } else {
       loader.classList.remove('popup__loader_is-active');
     }
   }
@@ -87,6 +88,7 @@ export default class Popup extends BaseComponent {
     this._clearContent();
     this._setContent();
     this._container.classList.add('popup_is-active');
+    this._container.querySelector(`.${this._focusClassName}`).focus({ preventScroll: true });
   }
 
   close() {
@@ -95,6 +97,6 @@ export default class Popup extends BaseComponent {
       document.querySelector('.page').classList.remove('page_overflow');
       this._container.classList.remove('popup_is-active');
       this._clearContent();
-    }, 600);
+    }, 350);
   }
 }
