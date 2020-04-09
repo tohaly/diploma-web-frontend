@@ -80,7 +80,7 @@ export default class CardListFoundNews extends CardList {
         this.cards.push(article);
       });
 
-      if (articles.length < HOW_MANY_CARDS) {
+      if (articles.length <= HOW_MANY_CARDS) {
         this._switchButton(true);
       } else {
         this._switchButton(false);
