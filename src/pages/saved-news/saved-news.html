@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>NewsExplorer</title>
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.saved_news.css%>" />
+    <link rel="shortcut icon" href="<%=require('../../images/favicon.ico')%>" type="image/x-icon" />
+  </head>
+  <body style="display:none" class="page">
+    <%=require('html-loader!../../templates/header/header.html')%>
+    <section class="news-info ">
+      <div class="news-info__container">
+        <h2 class="news-info__title">Сохранённые статьи</h2>
+        <p class="news-info__subtitle">
+          <span class="news-info__user-name"></span><span class="news-info__text"></span>
+          <span class="news-info__numb-of-news"></span>
+        </p>
+        <p class="news-info__keywords">
+          По ключевым словам:
+          <span class="news-info__keywords_tag news-info__keywords_tag_one"></span>,
+          <span class="news-info__keywords_tag news-info__keywords_tag_two"></span>
+          <span class="news-info__keywords_tag news-info__keywords_tag_three"></span>
+        </p>
+        <div class="news-info__loader">
+          <div class="news-info__loader-item"></div>
+          <div class="news-info__loader-item"></div>
+          <div class="news-info__loader-item"></div>
+        </div>
+      </div>
+    </section>
+    <section class="saved-cards">
+      <div class="saved-cards__container">
+        <div class="cards cards_saved-news">
+          <div class="cards__list"></div>
+        </div>
+      </div>
+      <div class="server-response">
+        <p class="server-response__subtitle"></p>
+        <h4 class="server-response__title"></h4>
+        <div class="server-response__img"></div>
+      </div>
+      <div class="loader">
+        <div class="loader__item"></div>
+        <p class="loader__text">Ищем сохраненные новости...</p>
+      </div>
+    </section>
+    <section class="popup"></section>
+    <section class="popup-messages">
+      <div class="popup-messages__container">
+        <p class="popup-messages__message"></p>
+      </div>
+    </section>
+    <%=require('html-loader!../../templates/footer/footer.html')%>
+    <template class="template_popup_confirm">
+      <div class="popup__content popup__content_delete">
+        <div class="popup__loader">
+          <div class="popup__loader-item"></div>
+        </div>
+        <div class="popup__close"></div>
+        <h3 class="popup__title">Вы действительно хотите удалить новость?</h3>
+        <form class="popup__form" name="signup" novalidate>
+          <button
+            type="button"
+            class="button popup__button popup__button_is-active  popup__button_confirm"
+            name="submitButton"
+          >
+            Удалить
+          </button>
+          <button
+            type="button"
+            class="button popup__button popup__button_is-active popup__button_cancel"
+            name="submitButton"
+          >
+            Отмена
+          </button>
+          <div class="popup__error-wrapper popup__error-wrapper_form">
+            <span class="popup__error-message popup__error-message_form" aria-live="polite"></span>
+          </div>
+        </form>
+      </div>
+    </template>
+    <script src="<%= htmlWebpackPlugin.files.chunks.saved_news.entry %>"></script>
+  </body>
+</html>

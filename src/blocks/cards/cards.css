@@ -1,6 +1,7 @@
 @import url('./__title/cards__title.css');
-@import url('./__items/cards__items.css');
-@import url('./__get-more-cards/cards__get-more-cards.css');
+@import url('./__list/cards__list.css');
+@import url('./__button/cards__button.css');
+@import url('./__button/_is-hidden/cards__button_is-hidden.css');
 @import url('./card/card.css');
 
 .cards {
@@ -8,4 +9,5 @@
   color: #1a1b22;
   display: none;
   flex-direction: column;
+  padding: 80px 104px;
 }

@@ -4,7 +4,10 @@
 @import url('./__button/popup__button.css');
 @import url('./__button/_is-active/popup__button_is-active.css');
 @import url('./__content/popup__content.css');
+@import url('./__error-wrapper/popup__error-wrapper.css');
+@import url('./__error-wrapper/_form/popup__error-wrapper_form.css');
 @import url('./__error-message/popup__error-message.css');
+@import url('./__error-message/_is-active/popup__error-message_is-active.css');
 @import url('./__error-message/_form/popup__error-message_form.css');
 @import url('./__form/popup__form.css');
 @import url('./__input/popup__input.css');
@@ -12,6 +15,9 @@
 @import url('./__title/_successes/popup__title_successes.css');
 @import url('./__close/popup__close.css');
 @import url('./__label/popup__label.css');
+@import url('./__loader/popup__loader.css');
+@import url('./__loader-item/popup__loader-item.css');
+@import url('./__loader/_is-active/popup__loader_is-active.css');
 
 .popup {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;

@@ -1,0 +1,17 @@
+@keyframes shake {
+  0% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.search-form__field_error-message {
+  color: #ff0000;
+  animation: shake 0.1s both;
+  z-index: 0;
+}

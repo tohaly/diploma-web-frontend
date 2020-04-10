@@ -1,0 +1,11 @@
+@media screen and (max-width: 900px) {
+  .server-response {
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .server-response {
+    padding: 32px 16px;
+  }
+}

@@ -1,6 +1,14 @@
-@import url('../blocks/header/media/media.css');
+@import url('../templates/header/media/media.css');
 @import url('../blocks/menu/media/media.css');
 @import url('../blocks/cards/media/media.css');
 @import url('../blocks/news-info/media/media.css');
 @import url('../blocks/saved-cards/media/media.css');
-@import url('../blocks/footer/media/media.css');
+@import url('../blocks/server-response/media/media.css');
+@import url('../templates/footer/media/media.css');
+@import url('../blocks/popup-messages/media/media.css');
+
+@media screen and (max-width: 650px) {
+  .page_overflow {
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,31 @@
+@keyframes news-info-loader {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.news-info__loader-item {
+  width: 30%;
+  height: 16px;
+  border-radius: 16px;
+  margin-bottom: 35px;
+  background: linear-gradient(90deg, #b8b9b9, #e6e6e6 80%);
+  background-size: 200% 100%;
+  animation: news-info-loader 2s ease infinite;
+  margin-top: 4px;
+}
+
+.news-info__loader-item:nth-child(2) {
+  width: 35%;
+}
+
+.news-info__loader-item:nth-child(3) {
+  width: 45%;
+  margin-bottom: 4px;
+}

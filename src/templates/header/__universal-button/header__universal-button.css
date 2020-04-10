@@ -1,0 +1,46 @@
+@keyframes to-hamburger-button {
+  0% {
+    transform: rotate(-45deg);
+    top: 50%;
+  }
+}
+@keyframes to-hamburger-button-two {
+  0% {
+    transform: rotate(45deg);
+    top: 50%;
+  }
+}
+
+.header__universal-button {
+  display: none;
+  position: relative;
+  width: 16px;
+  height: 8px;
+  background-color: transparent;
+  border: none;
+  align-self: center;
+}
+
+.header__universal-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: rotate(0);
+  animation: to-hamburger-button-two 0.4s forwards;
+}
+
+.header__universal-button::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: rotate(0);
+  animation: to-hamburger-button 0.4s forwards;
+}

@@ -1,5 +1,5 @@
 .card__tag-name {
-  display: flex;
+  display: none;
   flex-direction: row-reverse;
   position: absolute;
   left: 24px;
@@ -13,4 +13,15 @@
   border-radius: 10px;
   padding: 11px 14px;
   cursor: pointer;
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: max-width 0.4s;
+}
+
+.card__tag-name:hover {
+  text-overflow: clip;
+  overflow: visible;
+  max-width: none;
 }

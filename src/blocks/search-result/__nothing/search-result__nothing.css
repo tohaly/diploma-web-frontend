@@ -1,5 +1,16 @@
+@keyframes drop-nothing-result {
+  0% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .search-result__nothing {
   display: none;
   flex-direction: column;
   align-items: center;
+  padding: 80px 104px;
+  animation: drop-nothing-result 0.4s forwards;
 }

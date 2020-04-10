@@ -1,3 +1,21 @@
+@keyframes drop-mobile-menu {
+  0% {
+    transform: translateY(-250px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes up-mobile-menu {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-250px);
+  }
+}
+
 .menu__container {
   display: flex;
   height: 100%;

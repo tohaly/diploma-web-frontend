@@ -1,5 +1,7 @@
 @import url('./__field/search-form__field.css');
+@import url('./__field/_error-message/search-form__field_error-message.css');
 @import url('./__button/search-form__button.css');
+@import url('./__button/_disabled/search-form__button_disabled.css');
 
 .search-form {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -9,4 +11,5 @@
   display: flex;
   align-self: center;
   margin-bottom: 80px;
+  position: relative;
 }

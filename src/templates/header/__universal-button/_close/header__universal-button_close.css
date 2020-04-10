@@ -1,0 +1,29 @@
+@keyframes to-close-button {
+  0% {
+    transform: rotate(0);
+  }
+}
+
+.header__universal-button_close {
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.header__universal-button_close::before {
+  content: '';
+  position: absolute;
+  transform: rotate(45deg);
+  top: 50%;
+  left: 0;
+  animation: to-close-button 0.4s forwards;
+}
+
+.header__universal-button_close::after {
+  content: '';
+  position: absolute;
+  transform: rotate(-45deg);
+  top: 50%;
+  right: 0;
+  animation: to-close-button 0.4s forwards;
+}

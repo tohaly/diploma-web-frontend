@@ -1,0 +1,18 @@
+@keyframes get-soft-loader {
+  0% {
+    opacity: 0;
+  }
+}
+
+.card__loader {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  padding: 16px;
+  animation: get-soft-loader 0.4s forwards;
+  z-index: 4;
+}

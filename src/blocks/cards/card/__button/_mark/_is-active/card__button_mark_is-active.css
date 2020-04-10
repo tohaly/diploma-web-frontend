@@ -1,3 +1,4 @@
 .card__button_mark_is-active {
-  background-image: url('../../../../../../images/card-control/marked.svg');
+  stroke-width: 0;
+  fill: #2f71e5;
 }

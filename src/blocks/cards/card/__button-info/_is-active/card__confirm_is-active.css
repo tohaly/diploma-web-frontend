@@ -1,0 +1,14 @@
+@keyframes visible-info {
+  100% {
+    opacity: 1;
+  }
+}
+
+.card__button-info_is-active {
+  opacity: 0;
+}
+
+.card__button:hover + .card__button-info_is-active {
+  display: block;
+  animation: visible-info 0.4s forwards;
+}

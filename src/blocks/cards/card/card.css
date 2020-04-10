@@ -6,13 +6,26 @@
 @import url('./__button/_mark/card__button_mark.css');
 @import url('./__button/_delete/card__button_delete.css');
 @import url('./__button/_mark/_is-active/card__button_mark_is-active.css');
-@import url('./__confirm/card__confirm.css');
-@import url('./__confirm/_is-active/card__confirm_is-active.css');
+@import url('./__button-info//card__button-info.css');
+@import url('./__button-info//_is-active/card__confirm_is-active.css');
 @import url('./__resource/card__resource.css');
 @import url('./__control/card__control.css');
 @import url('./__content/card__content.css');
 @import url('./__link/card__link.css');
 @import url('./__tag-name/card__tag-name.css');
+@import url('./__tag-name/_is-active/card__tag-name_is-active.css');
+@import url('./__loader/card__loader.css');
+@import url('./__loader-text//card__loader-text.css');
+@import url('./__loader/_is-active/card__loader_is-active.css');
+
+@keyframes drop-card {
+  0% {
+    transform: translateY(200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
 .card {
   display: flex;
@@ -23,4 +36,10 @@
   overflow: hidden;
   position: relative;
   height: 100%;
+  animation: drop-card 0.4s forwards;
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
 }

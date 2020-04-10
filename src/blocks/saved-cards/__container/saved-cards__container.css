@@ -1,4 +1,4 @@
 .saved-cards__container {
-  max-width: calc(1440px - 208px);
+  max-width: 1440px;
   margin: 0 auto;
 }

@@ -1,11 +1,11 @@
 @media screen and (max-width: 900px) {
-  .search-result {
+  .search-result__nothing {
     padding: 40px;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .search-result {
+  .search-result__nothing {
     padding: 32px 16px;
   }
 }
