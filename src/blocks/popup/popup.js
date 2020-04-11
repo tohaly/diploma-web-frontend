@@ -1,4 +1,5 @@
 import BaseComponent from '../../js/components/base-components';
+import { WIDTH_FOR_MOBILE_MENU } from '../../js/constants/global-config';
 
 export default class Popup extends BaseComponent {
   constructor(template, container, focusClassName) {
@@ -88,7 +89,9 @@ export default class Popup extends BaseComponent {
     this._clearContent();
     this._setContent();
     this._container.classList.add('popup_is-active');
-    this._container.querySelector(`.${this._focusClassName}`).focus({ preventScroll: true });
+    if (window.innerWidth >= WIDTH_FOR_MOBILE_MENU) {
+      this._container.querySelector(`.${this._focusClassName}`).focus({ preventScroll: true });
+    }
   }
 
   close() {
