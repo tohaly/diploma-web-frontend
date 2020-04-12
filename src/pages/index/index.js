@@ -322,7 +322,7 @@ const login = event => {
       .then(() => header.renderButtons())
       .then(() => popupSignin.close())
       .then(() => ClosePopupsEvent())
-      .catch(err => form.setServerError(err.status))
+      // .catch(err => form.setServerError(err.status))
       .finally(() => popupSignin.renderLoader(false));
   }
 };

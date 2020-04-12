@@ -17,7 +17,7 @@ export default class Header extends BaseComponent {
 
   _templateLogoutButton() {
     return `<button class="button menu__button menu__button_logout">
-              <span class="menu__user-name">${this._props.user}</span>
+              <span class="menu__user-name"></span>
               <span class="menu__logout-img"></span>
             </button>`;
   }
@@ -162,6 +162,7 @@ export default class Header extends BaseComponent {
     if (this._props.isLogin) {
       this._addTemplate(this._templateSavedNewsLink());
       this._addTemplate(this._templateLogoutButton());
+      this._menuContainer.querySelector('.menu__user-name').textContent = this._props.user;
     } else {
       this._addTemplate(this._templateAuthButton());
     }
