@@ -178,13 +178,16 @@ const parsingArticle = (data, keyword, _id) => {
 };
 
 const getAlreadyMarkedCards = (article, list) => {
-  for (let i = 0; i < list.length; i += 1) {
-    if (article.title.startsWith(list[i].title.substring(0, 20))) {
-      article._id = list[i]._id;
-      return true;
+  let boolean = false;
+
+  list.forEach(newArticle => {
+    if (article.title.startsWith(newArticle.title.substring(0, 20))) {
+      article._id = newArticle._id;
+      boolean = true;
     }
-  }
-  return false;
+  });
+
+  return boolean;
 };
 
 const createCard = (article, keyword, _id) => {
