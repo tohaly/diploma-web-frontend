@@ -5,7 +5,7 @@ export default {
   KEY: '6b548abf117b49e3857d6096d2297a1c',
   SORT_BY: 'publishedAt', // Maybe one of these:  relevancy/popularity/publishedAt
   DAY_LATEST_NEWS: 7, // A date and optional time for the oldest article allowed
-  PAGE_SIZE: 100 // The number of results to return per page.
+  PAGE_SIZE: 30 // The number of results to return per page.
 };
 
 // More information here: https://newsapi.org/docs/
