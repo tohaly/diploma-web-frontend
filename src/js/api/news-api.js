@@ -29,20 +29,9 @@ export default class NewsApi {
   }
 
   getNews(keyword) {
+    const { URL, WHERE_LOOKING, LANG, SORT_BY, PAGE_SIZE, KEY } = this.props;
     return fetch(
-      `${this.props.URL}/everything?${this.props.WHERE_LOOKING}=${keyword}&language=${
-        this.props.LANG
-      }&sortBy=${
-        this.props.SORT_BY
-      }&from=${this._getOldestNewsDay()}&to=${this._getCurrentDate()}&pageSize=${
-        this.props.PAGE_SIZE
-      }`,
-
-      {
-        headers: {
-          'x-api-key': `${this.props.KEY}`
-        }
-      }
+      `${URL}/everything?${WHERE_LOOKING}=${keyword}&language=${LANG}&sortBy=${SORT_BY}&from=${this._getOldestNewsDay()}&to=${this._getCurrentDate()}&pageSize=${PAGE_SIZE}&apiKey=${KEY}`
     ).then(this._getResponse);
   }
 }

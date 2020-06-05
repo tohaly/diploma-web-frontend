@@ -1,11 +1,12 @@
 export default {
-  URL: NODE_ENV === 'development' ? 'http://newsapi.org/v2' : 'https://newsapi.org/v2',
+  URL: 'https://praktikum.tk/news/v2',
   LANG: 'ru',
   WHERE_LOOKING: 'qInTitle', // qInTitle - search in title / q - search in title and body
-  KEY: '6b548abf117b49e3857d6096d2297a1c',
+  KEY: '3a5c3cb033b4435a8bc94c6bdc0de2ab',
   SORT_BY: 'publishedAt', // Maybe one of these:  relevancy/popularity/publishedAt
   DAY_LATEST_NEWS: 7, // A date and optional time for the oldest article allowed
   PAGE_SIZE: 30 // The number of results to return per page.
 };
 
 // More information here: https://newsapi.org/docs/
+
