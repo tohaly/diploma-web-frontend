@@ -11,29 +11,41 @@ Version: v.0.1.0
 
 [Подробное описание как пользоваться представлено ниже.](#Howtouse)
 
-**Используемые технологии:** JS, CSS, HTML, WebPack, GIT, Babel, Eslint, Prettier.
+### Что было сделано
+
+- Верстка по макету `figma` с использованием `HTML`, `CSS`, `БЭМ`;
+- Логика: `JavaScript`;
+- Настроен вебпак:
+    - html: `HtmlWebpackPlugin`;
+    - обработка css: `css-loader`, `style-loader`, `postcss-loader`, `autoprefixer`, `cssnano`, `mini-css-extract-plugin`;
+    - обработка изображений: `file-loader`, `image-webpack-loader`;
+    - обработка шрифтов: `file-loader`;
+    - сборка JS: `babel`;
+- Кодстайлинг: `prettier`, `eslint`, `airbnb/base`;
+- Новости подгружаются из [NewsApi](https://newsapi.org/);
 
 ## Ссылки на развернутое приложение
 
-https://diploma-web.ml
+https://diploma-web.ml (в данный момент не работает)
 
-https://www.diploma-web.ml
+https://www.diploma-web.ml (в данный момент не работает)
 
-gh-pages:
-
-https://tohaly.github.io/diploma-web-frontend/
+Сейчас проект можно развернуть только локально инструкция ниже.
 
 ## Локальный запуск проекта
-
-1. Склонировать репозиторий
-2. Доставить отсутствующие модули npm
-   ```
-       npm install
-   ```
+1. Сначала нужно установить и локально развернуть API данного приложения [находится здесь](https://github.com/tohaly/diploma-web-backend);
+2. Склонировать репозиторий
+    ```
+        git clone https://github.com/tohaly/diploma-web-frontend.git
+    ```
+2. Доставить отсутствющие модули npm
+    ```
+        npm i
+    ```
 3. Запустить локальный сервер
-   ```
-       npm run dev
-   ```
+    ```
+        npm run dev
+    ```
 
 ## Публикация на GitHub Pages
 
@@ -48,20 +60,40 @@ https://tohaly.github.io/diploma-web-frontend/
    ```
        npm run deploy
    ```
+   
+### Публикация на GitHub Pages
+1. Сделать форк проекта
+2. Склонировать репозиторий
+    ```
+        git clone https://github.com/tohaly/diploma-web-frontend.git
+    ```
+3. Доставить отсутствующие модули npm
+    ```
+        npm i
+    ```
+4. Собрать проект
+    ```
+        npm run build
+    ```
+5. Запушить собранный проект на GitHub
+    ```
+        npm run deploy
+    ```
 
-## Внесение изменений
-
-При необходимости, после внесения изменений, запустить тестирование
-
+### Внесение изменений
+1. При необходимости, после внесения изменений, запустить тестирование
     ```
         npm run eslint
     ```
-
-Если обнаружены ошибки, тогда можно попробовать автоматически исправить проблемы
-
+2. Для автоматического исправления можно воспользоваться командой:
     ```
         npm run eslintFix
     ```
+
+
+
+
+
 
 ## <a name="Howtouse"></a> Как пользоваться
 
